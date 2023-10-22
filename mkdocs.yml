@@ -1,0 +1,67 @@
+site_name: FastAPI Türkiye
+site_description: FastAPI Türkiye Topluluğu Web Sitesi
+site_url: https://hasansezertasan.github.io/fastapi-turkiye/
+repo_name: hasansezertasan/fastapi-turkiye
+repo_url: https://github.com/hasansezertasan/fastapi-turkiye/
+
+theme:
+  name: material
+  language: tr
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+
+plugins:
+  - search
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - tables
+  - def_list
+
+nav:
+  - Anasayfa: index.md
+  - Çeviri Notları: translation-notes.md
+  - Rehber: guide.md
+  - Sözlük: glossary.md
+  - MkDocs: mkdocs.md
+  - Ekip: team.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/fastapiturkiye
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/dPgCU2X9xB
+    - icon: fontawesome/brands/medium
+      link: https://medium.com/fastapitr

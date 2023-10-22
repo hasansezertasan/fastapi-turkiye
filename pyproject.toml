@@ -1,0 +1,17 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "hasansezertasan.github.io/fastapi-turkiye"
+version = "0.1.0"
+description = ""
+authors = ["hasansezertasan <hasansezertasan@gmail.com>"]
+maintainers = ["hasansezertasan <hasansezertasan@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+mkdocs-material = "^9.4.6"
+mkdocs = {extras = ["i18n"], version = "^1.5.3"}
