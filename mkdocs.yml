@@ -3,6 +3,7 @@ site_description: FastAPI Türkiye Topluluğu Web Sitesi
 site_url: https://hasansezertasan.github.io/fastapi-turkiye/
 repo_name: hasansezertasan/fastapi-turkiye
 repo_url: https://github.com/hasansezertasan/fastapi-turkiye/
+edit_uri: https://github.com/hasansezertasan/fastapi-turkiye/tree/main/docs
 
 theme:
   name: material
@@ -21,23 +22,29 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   features:
-    - navigation.instant
-    - navigation.top
-    - navigation.sections
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
     - search.suggest
     - search.highlight
-    - content.tabs.link
-    - content.code.annotate
+    - navigation.instant
+    - navigation.footer
+    - navigation.sections
+    - navigation.top
+    - navigation.tabs
 
-plugins:
-  - search
 markdown_extensions:
   - toc:
       permalink: true
+      title: İçindekiler
+  - abbr
   - admonition
   - pymdownx.details
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      auto_append:
+        - docs/includes/abbreviations.md
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
@@ -49,13 +56,20 @@ markdown_extensions:
   - tables
   - def_list
 
+plugins:
+  - search
+  - blog
+
 nav:
   - Anasayfa: index.md
+  - Ekip: team.md
   - Çeviri Notları: translation-notes.md
   - Rehber: guide.md
   - Sözlük: glossary.md
-  - MkDocs: mkdocs.md
-  - Ekip: team.md
+  - Öğreticiler:
+      - Markdown: tutorials/markdown.md
+      - MkDocs: tutorials/mkdocs.md
+  - Blog: blog
 
 extra:
   social:
