@@ -16,17 +16,32 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://hasansezertasan.github.io/fastapi-turkiye/mkdocs/</loc>
-         <lastmod>2023-10-22</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://hasansezertasan.github.io/fastapi-turkiye/team/</loc>
          <lastmod>2023-10-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://hasansezertasan.github.io/fastapi-turkiye/translation-notes/</loc>
+         <lastmod>2023-10-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hasansezertasan.github.io/fastapi-turkiye/blog/</loc>
+         <lastmod>2023-10-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hasansezertasan.github.io/fastapi-turkiye/includes/abbreviations/</loc>
+         <lastmod>2023-10-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hasansezertasan.github.io/fastapi-turkiye/tutorials/markdown/</loc>
+         <lastmod>2023-10-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://hasansezertasan.github.io/fastapi-turkiye/tutorials/mkdocs/</loc>
          <lastmod>2023-10-22</lastmod>
          <changefreq>daily</changefreq>
     </url>
