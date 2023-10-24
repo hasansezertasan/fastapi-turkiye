@@ -8,6 +8,7 @@ edit_uri: https://github.com/hasansezertasan/fastapi-turkiye/tree/main/docs
 theme:
   name: material
   language: tr
+  logo: assets/logo-white.svg
   palette:
     - scheme: default
       primary: teal
@@ -78,4 +79,4 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/dPgCU2X9xB
     - icon: fontawesome/brands/medium
-      link: https://medium.com/fastapitr
+      link: https://medium.com/fastapi-turkiye
