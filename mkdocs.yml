@@ -46,6 +46,7 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - docs/includes/abbreviations.md
+        - docs/includes/refs.md
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
