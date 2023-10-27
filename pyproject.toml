@@ -15,3 +15,4 @@ license = "MIT"
 python = ">=3.8,<4.0"
 mkdocs-material = "^9.4.6"
 mkdocs = {extras = ["i18n"], version = "^1.5.3"}
+mkdocs-macros-plugin = "^1.0.4"
