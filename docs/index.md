@@ -9,3 +9,9 @@ Topluluğun bir parçası olmak, gelişmelerden ve ilerleyişimizden haberdar ol
 - [Medium](https://medium.com/fastapi-turkiye)
 - [Telegram](https://t.me/fastapiturkiye)
 - [Discord](https://discord.gg/dPgCU2X9xB)
+
+## Atıf
+
+Profil kartları için kullanılan CSS blokları [FastAPI] dokümantasyonunun kaynak kodundan alınmıştır.
+
+[FastAPI]: https://github.com/tiangolo/fastapi
