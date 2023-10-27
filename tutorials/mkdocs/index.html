@@ -16,6 +16,8 @@
         <link rel="prev" href="../markdown/">
       
       
+        <link rel="next" href="../../progress/">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.6">
@@ -47,6 +49,8 @@
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
+    
+      <link rel="stylesheet" href="../../css/custom.css">
     
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -321,6 +325,23 @@
   
   
     <li class="md-tabs__item">
+      <a href="../../progress/" class="md-tabs__link">
+        
+  
+    
+  
+  İlerleyiş
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../../blog" class="md-tabs__link">
         
   
@@ -587,6 +608,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#admonitions" class="md-nav__link">
+    Admonitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abbreviations" class="md-nav__link">
+    Abbreviations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#baglantlar" class="md-nav__link">
     Bağlantılar
   </a>
@@ -605,6 +640,25 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../progress/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    İlerleyiş
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -657,6 +711,20 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#admonitions" class="md-nav__link">
+    Admonitions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#abbreviations" class="md-nav__link">
+    Abbreviations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#baglantlar" class="md-nav__link">
     Bağlantılar
   </a>
@@ -690,6 +758,45 @@
 
 
 <h1 id="mkdocs">MkDocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
+<h2 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h2>
+<p><a href="https://squidfunk.github.io/mkdocs-material/reference/admonitions/">Admonitions</a> <code>!!! {type}</code> şeklinde olan yapılarda <code>{type}</code> kısmını Türkçe'ye çevirirsek MkDocs düzgün derleme almıyor. Bu yapıları çevirmek için <code>admonition_map</code> üzerinde olan karşılıkları birebir kullanılabilir.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">admonition_map</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  <span class="s1">&#39;!!! note&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! note &quot;Not&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="s1">&#39;!!! abstract&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! abstract &quot;Soyut&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  <span class="s1">&#39;!!! info&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! info &quot;Bilgi&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  <span class="s1">&#39;!!! tip&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! tip &quot;İpucu&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  <span class="s1">&#39;!!! success&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! success &quot;Başarı&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  <span class="s1">&#39;!!! question&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! question &quot;Soru&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  <span class="s1">&#39;!!! warning&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! warning &quot;Uyarı&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  <span class="s1">&#39;!!! failure&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! failure &quot;Başarısızlık&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  <span class="s1">&#39;!!! danger&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! danger &quot;Tehlike&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  <span class="s1">&#39;!!! bug&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! bug &quot;Hata&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  <span class="s1">&#39;!!! example&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! example &quot;Örnek&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  <span class="s1">&#39;!!! quote&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! quote &quot;Alıntı&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  <span class="s1">&#39;!!! important&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! important &quot;Önemli&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  <span class="s1">&#39;!!! usage&#39;</span><span class="p">:</span> <span class="s1">&#39;!!! usage &quot;Kullanım&quot;&#39;</span><span class="p">,</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>!!! example &quot;Örnek&quot;
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    Bu bir örnektir.
+</code></pre></div>
+<h2 id="abbreviations">Abbreviations<a class="headerlink" href="#abbreviations" title="Permanent link">&para;</a></h2>
+<p>Abbreviations ile kelimeleri vurgulayabiliriz. Örneğin <code>Python</code> kelimesini <code>Python, bir programlama dilidir.</code> şeklinde çevirebiliriz. Bu durumda <code>Python</code> kelimesini vurgulamak için <code>abbr</code> etiketini kullanabiliriz.</p>
+<div class="admonition example">
+<p class="admonition-title">Örnek</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[Python], bir programlama dilidir. [^1]
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>*[Python]: Python, a programming language.
+</code></pre></div>
+<p>[<abbr title="Python, a programming language.">Python</abbr>], bir programlama dilidir. [^1]</p>
+</div>
+<p>veya</p>
+<div class="admonition example">
+<p class="admonition-title">Örnek</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>&lt;abbr title=&quot;a programming language&quot;&gt;Python&lt;/abbr&gt;, bir programlama dilidir.
+</code></pre></div>
+<p><abbr title="a programming language"><abbr title="Python, a programming language.">Python</abbr></abbr>, bir programlama dilidir.</p>
+</div>
 <h2 id="baglantlar">Bağlantılar<a class="headerlink" href="#baglantlar" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.mkdocs.org/">MkDocs</a></li>
@@ -740,6 +847,22 @@
           </a>
         
         
+          
+          <a href="../../progress/" class="md-footer__link md-footer__link--next" aria-label="Sonraki: İlerleyiş">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Sonraki
+              </span>
+              <div class="md-ellipsis">
+                İlerleyiş
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
       </nav>
     
   
@@ -783,10 +906,7 @@
     
     
     
-      
-      
-    
-    <a href="https://medium.com/fastapi-turkiye" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+    <a href="" target="_blank" rel="noopener" title="" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
     </a>
   

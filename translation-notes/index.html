@@ -50,6 +50,8 @@
       
     
     
+      <link rel="stylesheet" href="../css/custom.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -323,6 +325,23 @@
   
   
     <li class="md-tabs__item">
+      <a href="../progress/" class="md-tabs__link">
+        
+  
+    
+  
+  İlerleyiş
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
       <a href="../blog" class="md-tabs__link">
         
   
@@ -432,6 +451,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Çeviri Notları
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -441,6 +471,75 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="İçindekiler">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#baslamadan-once" class="md-nav__link">
+    Başlamadan Önce
+  </a>
+  
+    <nav class="md-nav" aria-label="Başlamadan Önce">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#katk-duzeni-contribution-convention" class="md-nav__link">
+    Katkı  Düzeni - Contribution Convention
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurallar" class="md-nav__link">
+    Kurallar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oneriler" class="md-nav__link">
+    Öneriler
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skca-yaplan-hatalar" class="md-nav__link">
+    Sıkça Yapılan Hatalar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kaynaklar" class="md-nav__link">
+    Kaynaklar
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -576,6 +675,25 @@
   
   
     <li class="md-nav__item">
+      <a href="../progress/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    İlerleyiş
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../blog" class="md-nav__link">
         
   
@@ -611,6 +729,62 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      İçindekiler
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#baslamadan-once" class="md-nav__link">
+    Başlamadan Önce
+  </a>
+  
+    <nav class="md-nav" aria-label="Başlamadan Önce">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#katk-duzeni-contribution-convention" class="md-nav__link">
+    Katkı  Düzeni - Contribution Convention
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurallar" class="md-nav__link">
+    Kurallar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oneriler" class="md-nav__link">
+    Öneriler
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skca-yaplan-hatalar" class="md-nav__link">
+    Sıkça Yapılan Hatalar
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kaynaklar" class="md-nav__link">
+    Kaynaklar
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -636,6 +810,64 @@
 
 
 <h1 id="ceviri-notlar">Çeviri Notları<a class="headerlink" href="#ceviri-notlar" title="Permanent link">&para;</a></h1>
+<h2 id="baslamadan-once">Başlamadan Önce<a class="headerlink" href="#baslamadan-once" title="Permanent link">&para;</a></h2>
+<p>Herhangi bir çalışmadan önce, mümkünse <a href="https://fastapi.tiangolo.com/contributing/">Development - Contributing - <abbr title="Hızlı ve modern bir web framework'ü">FastAPI</abbr></a> sayfasının tamamını, değilse <code>Translations</code> başlığını kesinlikle okumanızı tavsiye ederim.</p>
+<h3 id="katk-duzeni-contribution-convention">Katkı  Düzeni - Contribution Convention<a class="headerlink" href="#katk-duzeni-contribution-convention" title="Permanent link">&para;</a></h3>
+<p>Bir doküman üzerinde ekleme, düzenleme veya güncelleme yapıldığında, sadece o doküman <code>commit</code>lenmeli ve <code>pull request</code> içerisinde sadece o doküman yer almalı.</p>
+<p><code>Pull Request</code> açarken isimlendirmeye dikkat etmeliyiz.</p>
+<div class="admonition example">
+<p class="admonition-title">Eklemeler için</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>🌐 Add {{language}} translation for <span class="sb">`{{file_path}}`</span>
+</code></pre></div>
+<p>🌐 Add Turkish translation for <code>docs/tr/docs/learn/index.md</code></p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Güncellemeler için</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>🌐 Update {{language}} translation for <span class="sb">`{{file_path}}`</span>
+</code></pre></div>
+<p>🌐 Update Turkish translation for <code>docs/tr/docs/learn/index.md</code></p>
+</div>
+<h2 id="kurallar">Kurallar<a class="headerlink" href="#kurallar" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Çeviride tutarlılık:</li>
+<li>Mesela doküman genelinde <code>request</code> çevirisi olarak <code>istek</code> kullanılmışsa, <code>talep</code> kullanılmamalı. Burada bahsi geçen kelimeler teknik kelimelerdir.<ul>
+<li><code>HTTP Request</code>: <code>HTTP İsteği</code></li>
+<li><code>HTTP Response</code>: <code>HTTP Yanıtı</code></li>
+<li><code>Body Parameter</code>: <code>Gövde Parametresi</code></li>
+<li><code>Query Parameter</code>: <code>Sorgu Parametresi</code></li>
+<li><code>Cookie</code>: <code>Çerez</code></li>
+<li><code>Header</code>: <code>Header</code></li>
+<li><code>Function</code>: <code>Fonksiyon</code></li>
+<li><code>Method</code>: <code>Metod</code></li>
+<li><code>Type Hint</code>: <code>Tip Belirteci</code></li>
+<li><code>Type Annotation</code>: <code>Tip Belirteci</code></li>
+<li><code>Editor</code>: <code>Editör</code></li>
+<li><code>Data</code>: <code>Veri</code></li>
+<li><code>Database</code>: <code>Veritabanı</code></li>
+<li><code>Validation</code>: <code>Doğrulama</code></li>
+<li><code>Dependency Injection</code>: <code>Bağımlılık Enjeksiyonu</code></li>
+</ul>
+</li>
+<li>Samimi bir dil:</li>
+<li>Mesela <code>edit it</code> çevirisini <code>düzenle</code> gibi çevirmek yerine <code>düzenleyelim</code> diyebiliriz.</li>
+<li>Yazım hatası ve noktalama işaretlerine dikkat etmeliyiz.</li>
+</ul>
+<h2 id="oneriler">Öneriler<a class="headerlink" href="#oneriler" title="Permanent link">&para;</a></h2>
+<p>Kullanılan kavramın Türkçe çevirisiyle birlikte İngilizce halini de kullanıcı için erişilebilir hale getirmek çok kolay, bunu <code>abbr</code> etiketini kullanarak yapabilirsiniz. <a href="../tutorials/mkdocs/#abbreviations">Detaylar için</a> <code>MkDocs</code> dokümanına bakabilirsiniz.</p>
+<h2 id="skca-yaplan-hatalar">Sıkça Yapılan Hatalar<a class="headerlink" href="#skca-yaplan-hatalar" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Türkçe karakterlerin kullanımı.</li>
+<li>Başlıklarda sadece ilk kelimenin büyük harfle başlaması: örnek bir başlık olarak <code>## Sıkça yapılan hatalar</code> hatalı bir kullanımdır, bunun yerine <code>## Sıkça Yapılan Hatalar</code> kullanılmalıdır. Aynı şekilde, <code>ile</code>, <code>ve</code>, <code>veya</code>, <code>de</code>, <code>da</code>, <code>ki</code>, <code>değil</code>, <code>dahi</code>, <code>ki</code>, <code>ile</code>, <code>ise</code>, <code>ya da</code>, <code>yani</code> gibi bağlaçlar da küçük harfle başlamalıdır.</li>
+<li>Ard arda boşluk: <code>Bu benim  cümlem</code> yazımı hatalıdır çünkü aradaki boşluklar gereksizdir. <code>Bu benim cümlem</code> şeklinde yazılmalıdır. Bu hata İngilizce dokümanda da sıkça yapılmıştır, çeviri yaparken bu hataya dikakt edelim.</li>
+<li>Ard arda boş satır: Markdown yapısında ard arda boş satır, alt alta iki boş satır stili bozabiliyor.</li>
+<li>Hizalamalı çeviri: İngilizce dokümanda bir yapıyı anlatmak için 10 satır kullanılmış olabilir ve bu yapı Türkçeye çevirilirken 2 satırda, özet bir paragrafla anlatılabilir. Doğru ancak bunu yapmak bu tarz çevirilerde yanlış olacaktır. Çevirilerimizi gerçekleştirirken satır satır çeviri yaparsak eğer inceleme yapan kişi veya ileride çeviriyi güncelleyecek kişi satır numaralarını referans alarak çalışabilir.</li>
+</ul>
+<h2 id="kaynaklar">Kaynaklar<a class="headerlink" href="#kaynaklar" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Bilişim kavramları için <a href="http://cayfer.bilkent.edu.tr/~cayfer/bilisim-sozlugu/tbd-ing-trk-sozluk.htm">Bilkent Bilişim Terimleri Sözlüğü</a> sayfasını referans alıyoruz.</li>
+<li>Türkçe - İngilizce sözlük olarak <a href="https://tureng.com/en/turkish-english">Tureng - Turkish English Dictionary</a> sayfasını kullanıyoruz.</li>
+<li>İmla kuralları ve Türkçe anlamları için <a href="https://sozluk.gov.tr/">Türk Dil Kurumu Sözlükleri</a> sayfasını kullanıyoruz.</li>
+</ul>
 
 
 
@@ -740,10 +972,7 @@
     
     
     
-      
-      
-    
-    <a href="https://medium.com/fastapi-turkiye" target="_blank" rel="noopener" title="medium.com" class="md-social__link">
+    <a href="" target="_blank" rel="noopener" title="" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M180.5 74.262C80.813 74.262 0 155.633 0 256s80.819 181.738 180.5 181.738S361 356.373 361 256 280.191 74.262 180.5 74.262Zm288.25 10.646c-49.845 0-90.245 76.619-90.245 171.095s40.406 171.1 90.251 171.1 90.251-76.619 90.251-171.1H559c0-94.503-40.4-171.095-90.248-171.095Zm139.506 17.821c-17.526 0-31.735 68.628-31.735 153.274s14.2 153.274 31.735 153.274S640 340.631 640 256c0-84.649-14.215-153.271-31.742-153.271Z"/></svg>
     </a>
   
