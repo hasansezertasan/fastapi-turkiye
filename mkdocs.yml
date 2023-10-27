@@ -41,6 +41,7 @@ markdown_extensions:
       title: İçindekiler
   - abbr
   - admonition
+  - pymdownx.emoji
   - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets:
@@ -55,6 +56,7 @@ markdown_extensions:
   - pymdownx.tabbed:
       alternate_style: true
   - attr_list
+  - md_in_html
   - tables
   - def_list
 
@@ -71,7 +73,10 @@ nav:
   - Öğreticiler:
       - Markdown: tutorials/markdown.md
       - MkDocs: tutorials/mkdocs.md
+  - İlerleyiş: progress.md
   - Blog: blog
+extra_css:
+- css/custom.css
 
 extra:
   social:
@@ -80,4 +85,3 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/dPgCU2X9xB
     - icon: fontawesome/brands/medium
-      link: https://medium.com/fastapi-turkiye
