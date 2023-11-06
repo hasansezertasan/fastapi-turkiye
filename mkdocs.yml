@@ -76,8 +76,9 @@ nav:
       - MkDocs: tutorials/mkdocs.md
   - İlerleyiş: progress.md
   - Blog: blog
+
 extra_css:
-- css/custom.css
+  - css/custom.css
 
 extra:
   social:
