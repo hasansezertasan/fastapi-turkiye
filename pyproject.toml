@@ -1,7 +1,3 @@
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
 [tool.poetry]
 name = "hasansezertasan.github.io/fastapi-turkiye"
 version = "0.1.0"
