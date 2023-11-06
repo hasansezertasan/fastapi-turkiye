@@ -12,6 +12,6 @@ Topluluğun bir parçası olmak, gelişmelerden ve ilerleyişimizden haberdar ol
 
 ## Atıf
 
-Profil kartları için kullanılan CSS blokları [FastAPI] dokümantasyonunun kaynak kodundan alınmıştır.
+Avatar görselleri için kullanılan CSS blokları [FastAPI] dokümantasyonunun kaynak kodundan alınmıştır.
 
 [FastAPI]: https://github.com/tiangolo/fastapi
