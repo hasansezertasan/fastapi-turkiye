@@ -64,6 +64,8 @@ Kullanılan kavramın Türkçe çevirisiyle birlikte İngilizce halini de kullan
 
 ## Kaynaklar
 
-- Bilişim kavramları için [Bilkent Bilişim Terimleri Sözlüğü](http://cayfer.bilkent.edu.tr/~cayfer/bilisim-sozlugu/tbd-ing-trk-sozluk.htm) sayfasını referans alıyoruz.
+- Bilişim kavramları:
+  - [Bilkent Bilişim Terimleri Sözlüğü](http://cayfer.bilkent.edu.tr/~cayfer/bilisim-sozlugu/tbd-ing-trk-sozluk.htm)
+  - [Bilişim Sözlüğü](https://eski.tbd.org.tr/index.php?sayfa=sozluk)
 - Türkçe - İngilizce sözlük olarak [Tureng - Turkish English Dictionary](https://tureng.com/en/turkish-english) sayfasını kullanıyoruz.
 - İmla kuralları ve Türkçe anlamları için [Türk Dil Kurumu Sözlükleri](https://sozluk.gov.tr/) sayfasını kullanıyoruz.
