@@ -87,3 +87,6 @@ extra:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/dPgCU2X9xB
     - icon: fontawesome/brands/medium
+      link: https://medium.com/fastapi-turkiye
+    - icon: fontawesome/brands/gitter
+      link: https://gitter.im/fastapi-turkiye/community

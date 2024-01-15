@@ -9,6 +9,7 @@ Topluluğun bir parçası olmak, gelişmelerden ve ilerleyişimizden haberdar ol
 - [Medium](https://medium.com/fastapi-turkiye)
 - [Telegram](https://t.me/fastapiturkiye)
 - [Discord](https://discord.gg/dPgCU2X9xB)
+- [Gitter](https://gitter.im/fastapi-turkiye/community)
 
 ## Atıf
 
