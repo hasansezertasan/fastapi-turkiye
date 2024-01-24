@@ -17,141 +17,164 @@
 
 ## İlerleyiş
 
-| Sayfa                                                                 | Durum                 | Sebep       | Atanan             | Çeviren            | Gözden Geçiren                                             |
-| --------------------------------------------------------------------- | --------------------- | ----------- | ------------------ | ------------------ | ---------------------------------------------------------- |
-| [/index.md]({{url_for_pr(10444)}})                                    | :white_check_mark:    | Zaman Aşımı | [@hasansezertasan] | [@hasansezertasan] | [@alperiox], [@esrefzeki], [@bilalalpaslan], @mertssmnoglu |
-| [/features.md]({{url_for_pr(10492)}})                                 | :nerd:                | Zaman Aşımı | [@bilalalpaslan]   |                    | [@hasansezertasan]                                         |
-| [/fastapi-people.md]({{url_for_pr(10547)}})                           | :nerd:                | Zaman Aşımı | [@alperiox]        |                    |                                                            |
-| [/python-types.md]({{url_for_pr(10445)}})                             | :nerd:                | Zaman Aşımı | [@esrefzeki]       |                    | [@hasansezertasan], [@bilalalpaslan]                       |
-| [/alternatives.md]({{url_for_pr(10502)}})                             | :nerd:                | Yeni        | [@alperiox]        |                    | [@hasansezertasan]                                         |
-| [/external-links.md]({{url_for_pr(10549)}})                           | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| [/benchmarks.md]({{url_for_pr(11005)}})                               | :white_check_mark:    | Zaman Aşımı | [@bilalalpaslan]   | [@hasansezertasan] |                                                            |
-| [/newsletter.md]({{url_for_pr(10550)}})                               | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] | [@alperiox]                                                |
-| `/project-generation.md`                                              | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
-| `/async.md`                                                           | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
-| `/contributing.md`                                                    | :construction:        | Yeni        | [@hasansezertasan] |                    |                                                            |
-| `/help-fastapi.md`                                                    | :white_square_button: | Yeni        |                    |                    |                                                            |
-| [/history-design-future.md]({{url_for_pr(11012)}})                    | :nerd:                | Yeni        | [@esrefzeki]       | [@hasansezertasan] |                                                            |
-| `/release-notes.md`                                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| [/about/index.md]({{url_for_pr(11006)}})                              | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| [/help/index.md]({{url_for_pr(11013)}})                               | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| [/learn/index.md]({{url_for_pr(11014)}})                              | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| `/tutorial/index.md`                                                  | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/first-steps.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/path-params.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/query-params.md`                                           | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/body.md`                                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/query-params-str-validations.md`                           | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/path-params-numeric-validations.md`                        | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/body-multiple-params.md`                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/body-fields.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/body-nested-models.md`                                     | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/schema-extra-example.md`                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/extra-data-types.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/cookie-params.md`                                          | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/header-params.md`                                          | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/response-model.md`                                         | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/extra-models.md`                                           | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/response-status-code.md`                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/request-forms.md`                                          | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/request-files.md`                                          | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/request-forms-and-files.md`                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/handling-errors.md`                                        | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/path-operation-configuration.md`                           | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/encoder.md`                                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/body-updates.md`                                           | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/dependencies/index.md`                                     | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/dependencies/classes-as-dependencies.md`                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/dependencies/sub-dependencies.md`                          | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/dependencies/dependencies-in-path-operation-decorators.md` | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/dependencies/global-dependencies.md`                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/dependencies/dependencies-with-yield.md`                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/security/index.md`                                         | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/security/first-steps.md`                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/security/get-current-user.md`                              | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/security/simple-oauth2.md`                                 | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/security/oauth2-jwt.md`                                    | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/middleware.md`                                             | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/cors.md`                                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/sql-databases.md`                                          | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/bigger-applications.md`                                    | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/background-tasks.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/metadata.md`                                               | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/static-files.md`                                           | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/testing.md`                                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/tutorial/debugging.md`                                              | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/index.md`                                                  | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/path-operation-advanced-configuration.md`                  | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/additional-status-codes.md`                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/response-directly.md`                                      | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/custom-response.md`                                        | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/additional-responses.md`                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/response-cookies.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/response-headers.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/response-change-status-code.md`                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/advanced-dependencies.md`                                  | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/security/index.md`                                         | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/security/oauth2-scopes.md`                                 | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/security/http-basic-auth.md`                               | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/using-request-directly.md`                                 | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/dataclasses.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/middleware.md`                                             | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/sub-applications.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/behind-a-proxy.md`                                         | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/templates.md`                                              | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/websockets.md`                                             | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/events.md`                                                 | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/testing-websockets.md`                                     | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/testing-events.md`                                         | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/testing-dependencies.md`                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/testing-database.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/async-tests.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/settings.md`                                               | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/openapi-callbacks.md`                                      | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/openapi-webhooks.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/wsgi.md`                                                   | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/advanced/generate-clients.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/deployment/index.md`                                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/deployment/versions.md`                                             | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/deployment/https.md`                                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/deployment/manually.md`                                             | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/deployment/concepts.md`                                             | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/deployment/cloud.md`                                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/deployment/server-workers.md`                                       | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/deployment/docker.md`                                               | :white_square_button: | Yeni        |                    |                    |                                                            |
-| [/how-to/index.md]({{url_for_pr(11021)}})                             | :white_square_button: | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| `/how-to/general.md`                                                  | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/sql-databases-peewee.md`                                     | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/async-sql-encode-databases.md`                               | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/nosql-databases-couchbase.md`                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/graphql.md`                                                  | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/custom-request-and-route.md`                                 | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/conditional-openapi.md`                                      | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/extending-openapi.md`                                        | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/separate-openapi-schemas.md`                                 | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/custom-docs-ui-assets.md`                                    | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/how-to/configure-swagger-ui.md`                                     | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/index.md`                                                 | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/fastapi.md`                                               | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/parameters.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/status.md`                                                | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/uploadfile.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/exceptions.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/dependencies.md`                                          | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/apirouter.md`                                             | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/background.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/request.md`                                               | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/websockets.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/httpconnection.md`                                        | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/response.md`                                              | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/responses.md`                                             | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/middleware.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/openapi/index.md`                                         | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/openapi/docs.md`                                          | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/openapi/models.md`                                        | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/security/index.md`                                        | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/encoders.md`                                              | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/staticfiles.md`                                           | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/templating.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| `/reference/testclient.md`                                            | :white_square_button: | Yeni        |                    |                    |                                                            |
-| [/resources/index.md]({{url_for_pr(11020)}})                          | :white_square_button: | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| Sayfa                                              | Bağlantı | Durum                 | Sebep       | Atanan             | Çeviren            | Gözden Geçiren                                             |
+| -------------------------------------------------- | -------- | --------------------- | ----------- | ------------------ | ------------------ | ---------------------------------------------------------- |
+| [/index.md]({{url_for_pr(10444)}})                 |          | :white_check_mark:    | Zaman Aşımı | [@hasansezertasan] | [@hasansezertasan] | [@alperiox], [@esrefzeki], [@bilalalpaslan], @mertssmnoglu |
+| [/python-types.md]({{url_for_pr(10445)}})          |          | :nerd:                | Zaman Aşımı | [@esrefzeki]       | [@esrefzeki]       | [@hasansezertasan], [@bilalalpaslan]                       |
+| [/features.md]({{url_for_pr(10492)}})              |          | :nerd:                | Zaman Aşımı | [@bilalalpaslan]   | [@bilalalpaslan]   | [@hasansezertasan]                                         |
+| [/alternatives.md]({{url_for_pr(10502)}})          |          | :nerd:                | Yeni        | [@alperiox]        | [@alperiox]        | [@hasansezertasan]                                         |
+| [/fastapi-people.md]({{url_for_pr(10547)}})        |          | :nerd:                | Zaman Aşımı | [@alperiox]        | [@alperiox]        |                                                            |
+| [/external-links.md]({{url_for_pr(10549)}})        |          | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| [/newsletter.md]({{url_for_pr(10550)}})            |          | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] | [@alperiox]                                                |
+| [/benchmarks.md]({{url_for_pr(11005)}})            |          | :white_check_mark:    | Zaman Aşımı | [@bilalalpaslan]   | [@hasansezertasan] |                                                            |
+| [/about/index.md]({{url_for_pr(11006)}})           |          | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| [/history-design-future.md]({{url_for_pr(11012)}}) |          | :nerd:                | Yeni        | [@esrefzeki]       | [@hasansezertasan] |                                                            |
+| [/help/index.md]({{url_for_pr(11013)}})            |          | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| [/learn/index.md]({{url_for_pr(11014)}})           |          | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| [/resources/index.md]({{url_for_pr(11020)}})       |          | :white_square_button: | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| [/how-to/index.md]({{url_for_pr(11021)}})          |          | :white_square_button: | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| `/project-generation.md`                           |          | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
+| `/async.md`                                        |          | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
+| `/contributing.md`                                 |          | :construction:        | Yeni        | [@hasansezertasan] |                    |                                                            |
+| `/help-fastapi.md`                                 |          | :white_square_button: | Yeni        | [@hasansezertasan] |                    |                                                            |
+
+## Durum
+
+| Sayfa                                                                 | Durum              |
+| --------------------------------------------------------------------- | ------------------ |
+| `/index.md`                                                           | Zaman Aşımı        |
+| `/features.md`                                                        | Gözden Geçiriliyor |
+| `/fastapi-people.md`                                                  | Gözden Geçiriliyor |
+| `/python-types.md`                                                    | Gözden Geçiriliyor |
+| `/alternatives.md`                                                    | Gözden Geçiriliyor |
+| `/external-links.md`                                                  | Güncel             |
+| `/benchmarks.md`                                                      | Güncel             |
+| `/newsletter.md`                                                      | Güncel             |
+| `/project-generation.md`                                              | Zaman Aşımı        |
+| `/async.md`                                                           | Zaman Aşımı        |
+| `/contributing.md`                                                    | Çevirilmedi        |
+| `/help-fastapi.md`                                                    | Çevirilmedi        |
+| `/history-design-future.md`                                           | Gözden Geçiriliyor |
+| `/release-notes.md`                                                   | Çevirilmedi        |
+| `/about/index.md`                                                     | Güncel             |
+| `/help/index.md`                                                      | Güncel             |
+| `/learn/index.md`                                                     | Güncel             |
+| `/tutorial/index.md`                                                  | Çevirilmedi        |
+| `/tutorial/first-steps.md`                                            | Zaman Aşımı        |
+| `/tutorial/path-params.md`                                            | Çevirilmedi        |
+| `/tutorial/query-params.md`                                           | Çevirilmedi        |
+| `/tutorial/body.md`                                                   | Çevirilmedi        |
+| `/tutorial/query-params-str-validations.md`                           | Çevirilmedi        |
+| `/tutorial/path-params-numeric-validations.md`                        | Çevirilmedi        |
+| `/tutorial/body-multiple-params.md`                                   | Çevirilmedi        |
+| `/tutorial/body-fields.md`                                            | Çevirilmedi        |
+| `/tutorial/body-nested-models.md`                                     | Çevirilmedi        |
+| `/tutorial/schema-extra-example.md`                                   | Çevirilmedi        |
+| `/tutorial/extra-data-types.md`                                       | Çevirilmedi        |
+| `/tutorial/cookie-params.md`                                          | Çevirilmedi        |
+| `/tutorial/header-params.md`                                          | Çevirilmedi        |
+| `/tutorial/response-model.md`                                         | Çevirilmedi        |
+| `/tutorial/extra-models.md`                                           | Çevirilmedi        |
+| `/tutorial/response-status-code.md`                                   | Çevirilmedi        |
+| `/tutorial/request-forms.md`                                          | Çevirilmedi        |
+| `/tutorial/request-files.md`                                          | Çevirilmedi        |
+| `/tutorial/request-forms-and-files.md`                                | Çevirilmedi        |
+| `/tutorial/handling-errors.md`                                        | Çevirilmedi        |
+| `/tutorial/path-operation-configuration.md`                           | Çevirilmedi        |
+| `/tutorial/encoder.md`                                                | Çevirilmedi        |
+| `/tutorial/body-updates.md`                                           | Çevirilmedi        |
+| `/tutorial/dependencies/index.md`                                     | Çevirilmedi        |
+| `/tutorial/dependencies/classes-as-dependencies.md`                   | Çevirilmedi        |
+| `/tutorial/dependencies/sub-dependencies.md`                          | Çevirilmedi        |
+| `/tutorial/dependencies/dependencies-in-path-operation-decorators.md` | Çevirilmedi        |
+| `/tutorial/dependencies/global-dependencies.md`                       | Çevirilmedi        |
+| `/tutorial/dependencies/dependencies-with-yield.md`                   | Çevirilmedi        |
+| `/tutorial/security/index.md`                                         | Çevirilmedi        |
+| `/tutorial/security/first-steps.md`                                   | Çevirilmedi        |
+| `/tutorial/security/get-current-user.md`                              | Çevirilmedi        |
+| `/tutorial/security/simple-oauth2.md`                                 | Çevirilmedi        |
+| `/tutorial/security/oauth2-jwt.md`                                    | Çevirilmedi        |
+| `/tutorial/middleware.md`                                             | Çevirilmedi        |
+| `/tutorial/cors.md`                                                   | Çevirilmedi        |
+| `/tutorial/sql-databases.md`                                          | Çevirilmedi        |
+| `/tutorial/bigger-applications.md`                                    | Çevirilmedi        |
+| `/tutorial/background-tasks.md`                                       | Çevirilmedi        |
+| `/tutorial/metadata.md`                                               | Çevirilmedi        |
+| `/tutorial/static-files.md`                                           | Çevirilmedi        |
+| `/tutorial/testing.md`                                                | Çevirilmedi        |
+| `/tutorial/debugging.md`                                              | Çevirilmedi        |
+| `/advanced/index.md`                                                  | Çevirilmedi        |
+| `/advanced/path-operation-advanced-configuration.md`                  | Çevirilmedi        |
+| `/advanced/additional-status-codes.md`                                | Çevirilmedi        |
+| `/advanced/response-directly.md`                                      | Çevirilmedi        |
+| `/advanced/custom-response.md`                                        | Çevirilmedi        |
+| `/advanced/additional-responses.md`                                   | Çevirilmedi        |
+| `/advanced/response-cookies.md`                                       | Çevirilmedi        |
+| `/advanced/response-headers.md`                                       | Çevirilmedi        |
+| `/advanced/response-change-status-code.md`                            | Çevirilmedi        |
+| `/advanced/advanced-dependencies.md`                                  | Çevirilmedi        |
+| `/advanced/security/index.md`                                         | Çevirilmedi        |
+| `/advanced/security/oauth2-scopes.md`                                 | Çevirilmedi        |
+| `/advanced/security/http-basic-auth.md`                               | Çevirilmedi        |
+| `/advanced/using-request-directly.md`                                 | Çevirilmedi        |
+| `/advanced/dataclasses.md`                                            | Çevirilmedi        |
+| `/advanced/middleware.md`                                             | Çevirilmedi        |
+| `/advanced/sub-applications.md`                                       | Çevirilmedi        |
+| `/advanced/behind-a-proxy.md`                                         | Çevirilmedi        |
+| `/advanced/templates.md`                                              | Çevirilmedi        |
+| `/advanced/websockets.md`                                             | Çevirilmedi        |
+| `/advanced/events.md`                                                 | Çevirilmedi        |
+| `/advanced/testing-websockets.md`                                     | Çevirilmedi        |
+| `/advanced/testing-events.md`                                         | Çevirilmedi        |
+| `/advanced/testing-dependencies.md`                                   | Çevirilmedi        |
+| `/advanced/testing-database.md`                                       | Çevirilmedi        |
+| `/advanced/async-tests.md`                                            | Çevirilmedi        |
+| `/advanced/settings.md`                                               | Çevirilmedi        |
+| `/advanced/openapi-callbacks.md`                                      | Çevirilmedi        |
+| `/advanced/openapi-webhooks.md`                                       | Çevirilmedi        |
+| `/advanced/wsgi.md`                                                   | Çevirilmedi        |
+| `/advanced/generate-clients.md`                                       | Çevirilmedi        |
+| `/deployment/index.md`                                                | Çevirilmedi        |
+| `/deployment/versions.md`                                             | Çevirilmedi        |
+| `/deployment/https.md`                                                | Çevirilmedi        |
+| `/deployment/manually.md`                                             | Çevirilmedi        |
+| `/deployment/concepts.md`                                             | Çevirilmedi        |
+| `/deployment/cloud.md`                                                | Çevirilmedi        |
+| `/deployment/server-workers.md`                                       | Çevirilmedi        |
+| `/deployment/docker.md`                                               | Çevirilmedi        |
+| `/how-to/index.md`                                                    | Gözden Geçiriliyor |
+| `/how-to/general.md`                                                  | Çevirilmedi        |
+| `/how-to/sql-databases-peewee.md`                                     | Çevirilmedi        |
+| `/how-to/async-sql-encode-databases.md`                               | Çevirilmedi        |
+| `/how-to/nosql-databases-couchbase.md`                                | Çevirilmedi        |
+| `/how-to/graphql.md`                                                  | Çevirilmedi        |
+| `/how-to/custom-request-and-route.md`                                 | Çevirilmedi        |
+| `/how-to/conditional-openapi.md`                                      | Çevirilmedi        |
+| `/how-to/extending-openapi.md`                                        | Çevirilmedi        |
+| `/how-to/separate-openapi-schemas.md`                                 | Çevirilmedi        |
+| `/how-to/custom-docs-ui-assets.md`                                    | Çevirilmedi        |
+| `/how-to/configure-swagger-ui.md`                                     | Çevirilmedi        |
+| `/reference/index.md`                                                 | Çevirilmedi        |
+| `/reference/fastapi.md`                                               | Çevirilmedi        |
+| `/reference/parameters.md`                                            | Çevirilmedi        |
+| `/reference/status.md`                                                | Çevirilmedi        |
+| `/reference/uploadfile.md`                                            | Çevirilmedi        |
+| `/reference/exceptions.md`                                            | Çevirilmedi        |
+| `/reference/dependencies.md`                                          | Çevirilmedi        |
+| `/reference/apirouter.md`                                             | Çevirilmedi        |
+| `/reference/background.md`                                            | Çevirilmedi        |
+| `/reference/request.md`                                               | Çevirilmedi        |
+| `/reference/websockets.md`                                            | Çevirilmedi        |
+| `/reference/httpconnection.md`                                        | Çevirilmedi        |
+| `/reference/response.md`                                              | Çevirilmedi        |
+| `/reference/responses.md`                                             | Çevirilmedi        |
+| `/reference/middleware.md`                                            | Çevirilmedi        |
+| `/reference/openapi/index.md`                                         | Çevirilmedi        |
+| `/reference/openapi/docs.md`                                          | Çevirilmedi        |
+| `/reference/openapi/models.md`                                        | Çevirilmedi        |
+| `/reference/security/index.md`                                        | Çevirilmedi        |
+| `/reference/encoders.md`                                              | Çevirilmedi        |
+| `/reference/staticfiles.md`                                           | Çevirilmedi        |
+| `/reference/templating.md`                                            | Çevirilmedi        |
+| `/reference/testclient.md`                                            | Çevirilmedi        |
+| `/resources/index.md`                                                 | Gözden Geçiriliyor |
