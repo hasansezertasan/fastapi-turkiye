@@ -6,10 +6,11 @@
 
 Topluluğun bir parçası olmak, gelişmelerden ve ilerleyişimizden haberdar olmak, soru sorup yardımlaşmak için aşağıda ki kanalları kullanabilirsiniz.
 
-- [Medium](https://medium.com/fastapi-turkiye)
-- [Telegram](https://t.me/fastapiturkiye)
-- [Discord](https://discord.gg/dPgCU2X9xB)
-- [Gitter](https://gitter.im/fastapiturkiye/community)
+- [Medium Yayını](https://medium.com/fastapi-turkiye)
+- [Telegram Grubu](https://t.me/fastapiturkiye)
+- [Discord Sunucus](https://discord.gg/dPgCU2X9xB)
+- [LinkedIn Grubu](https://www.linkedin.com/groups/9581611/)
+- [Matrix Odası](https://matrix.to/#/#fastapi-turkiye:matrix.org)
 
 ## Atıf
 
