@@ -20,7 +20,7 @@
 
 ## İlerleyiş
 
-| Sayfa                       | Bağlantı          | Durum                 | Sebep       | Atanan             | Çeviren            | Gözden Geçiren                                             |
+| Sayfa                       | Bağlantı          | Durum                 | Sebep       | Gönüllü            | Çeviren            | Gözden Geçiren                                             |
 | --------------------------- | ----------------- | --------------------- | ----------- | ------------------ | ------------------ | ---------------------------------------------------------- |
 | `/index.md`                 | {{pr_ref(10444)}} | :white_check_mark:    | Zaman Aşımı | [@hasansezertasan] | [@hasansezertasan] | [@alperiox], [@esrefzeki], [@bilalalpaslan], @mertssmnoglu |
 | `/python-types.md`          | {{pr_ref(10445)}} | :nerd:                | Zaman Aşımı | [@esrefzeki]       | [@esrefzeki]       | [@hasansezertasan], [@bilalalpaslan]                       |
