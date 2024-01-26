@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 # Çeviri Notları
 
 ## Başlamadan Önce

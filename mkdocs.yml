@@ -67,6 +67,7 @@ plugins:
 
 nav:
   - Anasayfa: index.md
+  - İlerleyiş: progress.md
   - Ekip: team.md
   - Çeviri Notları: translation-notes.md
   - Rehber: guide.md
@@ -74,7 +75,6 @@ nav:
   - Öğreticiler:
       - Markdown: tutorials/markdown.md
       - MkDocs: tutorials/mkdocs.md
-  - İlerleyiş: progress.md
   - Blog: blog
 
 extra_css:

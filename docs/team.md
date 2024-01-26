@@ -1,3 +1,7 @@
+---
+hide:
+  - navigation
+---
 # Ekip
 
 <div class="user-list user-list-center">
