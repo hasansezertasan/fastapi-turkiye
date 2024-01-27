@@ -44,6 +44,9 @@ hide:
 | `/help-fastapi.md`          |                   | :white_square_button: | Yeni        | [@hasansezertasan] |                    |                                                            |
 | `/project-generation.md`    |                   | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
 | `/async.md`                 |                   | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
+| `/advanced/index.md`        |                   | :construction:        | Yeni        | [@alperiox]        |                    |                                                            |
+| `/deployment/index.md`      |                   | :construction:        | Yeni        | [@alperiox]        |                    |                                                            |
+| `/tutorial/index.md`        |                   | :construction:        | Yeni        | [@alperiox]        |                    |                                                            |
 
 ## Durum
 
