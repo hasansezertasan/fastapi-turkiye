@@ -2,7 +2,6 @@
 hide:
   - navigation
 ---
-
 # İlerleyiş
 
 <!--
@@ -21,15 +20,15 @@ hide:
 
 | Emoji | Durum            | Açıklama                    |
 | ----- | ---------------- | --------------------------- |
-| 🤓    | İnceleme         | PR açıldı, Review ediliyor. |
-| 🚧    | Yapım Aşamasında | Çalışma devam ediyor.       |
-| 🔳    | Yapılacak        | Çevirmenini bekliyor.       |
-| ✅    | Onaylandı        | Onaylandı.                  |
+| 🤓     | İnceleme         | PR açıldı, Review ediliyor. |
+| 🚧     | Yapım Aşamasında | Çalışma devam ediyor.       |
+| 🔳     | Yapılacak        | Çevirmenini bekliyor.       |
+| ✅     | Onaylandı        | Onaylandı.                  |
 
 ## İlerleyiş
 
 | Sayfa                       | Bağlantı          | Durum                 | Sebep       | Gönüllü            | Çeviren            | Gözden Geçiren                                             |
-| --------------------------- | ----------------- | --------------------- | ----------- | ------------------ | ------------------ | ---------------------------------------------------------- | --- |
+| --------------------------- | ----------------- | --------------------- | ----------- | ------------------ | ------------------ | ---------------------------------------------------------- |
 | `/index.md`                 | {{pr_ref(10444)}} | :white_check_mark:    | Zaman Aşımı | [@hasansezertasan] | [@hasansezertasan] | [@alperiox], [@esrefzeki], [@bilalalpaslan], @mertssmnoglu |
 | `/python-types.md`          | {{pr_ref(10445)}} | :nerd:                | Zaman Aşımı | [@esrefzeki]       | [@esrefzeki]       | [@hasansezertasan], [@bilalalpaslan]                       |
 | `/features.md`              | {{pr_ref(10492)}} | :nerd:                | Zaman Aşımı | [@bilalalpaslan]   | [@bilalalpaslan]   | [@hasansezertasan]                                         |
