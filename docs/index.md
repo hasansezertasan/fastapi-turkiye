@@ -12,7 +12,7 @@ Topluluğun bir parçası olmak, gelişmelerden ve ilerleyişimizden haberdar ol
 
 - [Medium Yayını](https://medium.com/fastapi-turkiye)
 - [Telegram Grubu](https://t.me/fastapiturkiye)
-- [Discord Sunucus](https://discord.gg/dPgCU2X9xB)
+- [Discord Sunucusu](https://discord.gg/dPgCU2X9xB)
 - [LinkedIn Grubu](https://www.linkedin.com/groups/9581611/)
 - [Matrix Odası](https://matrix.to/#/#fastapi-turkiye:matrix.org)
 
