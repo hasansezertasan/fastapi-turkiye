@@ -8,7 +8,7 @@ hide:
 
 ## Topluluk
 
-Topluluğun bir parçası olmak, gelişmelerden ve ilerleyişimizden haberdar olmak, soru sorup yardımlaşmak için aşağıda ki kanalları kullanabilirsiniz.
+Topluluğun bir parçası olmak, gelişmelerden ve ilerleyişimizden haberdar olmak, soru sorup yardımlaşmak için aşağıdaki kanalları kullanabilirsiniz.
 
 - [Medium Yayını](https://medium.com/fastapi-turkiye)
 - [Telegram Grubu](https://t.me/fastapiturkiye)

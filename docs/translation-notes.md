@@ -61,9 +61,9 @@ Kullanılan kavramın Türkçe çevirisiyle birlikte İngilizce halini de kullan
 ## Sıkça Yapılan Hatalar
 
 - Türkçe karakterlerin kullanımı.
-- Başlıklarda sadece ilk kelimenin büyük harfle başlaması: örnek bir başlık olarak `## Sıkça yapılan hatalar` hatalı bir kullanımdır, bunun yerine `## Sıkça Yapılan Hatalar` kullanılmalıdır. Aynı şekilde, `ile`, `ve`, `veya`, `de`, `da`, `ki`, `değil`, `dahi`, `ki`, `ile`, `ise`, `ya da`, `yani` gibi bağlaçlar da küçük harfle başlamalıdır.
-- Ard arda boşluk: `Bu benim  cümlem` yazımı hatalıdır çünkü aradaki boşluklar gereksizdir. `Bu benim cümlem` şeklinde yazılmalıdır. Bu hata İngilizce dokümanda da sıkça yapılmıştır, çeviri yaparken bu hataya dikakt edelim.
-- Ard arda boş satır: Markdown yapısında ard arda boş satır, alt alta iki boş satır stili bozabiliyor.
+- Başlıklarda sadece ilk kelimenin büyük harfle başlaması: örnek bir başlık olarak `## Sıkça yapılan hatalar` hatalı bir kullanımdır, bunun yerine `## Sıkça Yapılan Hatalar` kullanılmalıdır. Aynı şekilde, `ile`, `ve`, `veya`, `de`, `da`, `değil`, `dahi`, `ki`, `ise`, `ya da`, `yani` gibi bağlaçlar da küçük harfle başlamalıdır.
+- Art arda boşluk: `Bu benim  cümlem` yazımı hatalıdır çünkü aradaki boşluklar gereksizdir. `Bu benim cümlem` şeklinde yazılmalıdır. Bu hata İngilizce dokümanda da sıkça yapılmıştır, çeviri yaparken bu hataya dikkat edelim.
+- Art arda boş satır: Markdown yapısında art arda boş satır, alt alta iki boş satır stili bozabiliyor.
 - Hizalamalı çeviri: İngilizce dokümanda bir yapıyı anlatmak için 10 satır kullanılmış olabilir ve bu yapı Türkçeye çevirilirken 2 satırda, özet bir paragrafla anlatılabilir. Doğru ancak bunu yapmak bu tarz çevirilerde yanlış olacaktır. Çevirilerimizi gerçekleştirirken satır satır çeviri yaparsak eğer inceleme yapan kişi veya ileride çeviriyi güncelleyecek kişi satır numaralarını referans alarak çalışabilir.
 
 ## Kaynaklar
