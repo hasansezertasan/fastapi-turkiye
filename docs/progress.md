@@ -51,8 +51,9 @@ hide:
 | `/advanced/index.md`        |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
 | `/deployment/index.md`      |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
 | `/tutorial/index.md`        |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
-| `/tutorial/path-params.md`  | {{pr_ref(11073)}} | :nerd:                | Yeni        | [@emrhnsyts]       | [@emrhnsyts]       |                                                            | 
-| `/tutorial/query-params.md` |                   | :construction:        | Yeni        | [@emrhnsyts]       | [@emrhnsyts]       |                                                            |
+| `/tutorial/path-params.md`  | {{pr_ref(11073)}} | :nerd:                | Yeni        | @emrhnsyts | @emrhnsyts         |                                                      | 
+| `/tutorial/query-params.md` | {{pr_ref(11078)}} | :nerd:                | Yeni        | @emrhnsyts | @emrhnsyts         |                                                      |
+| `/tutorial/body.md`         |                   | :construction:        | Yeni        | @emrhnsyts | @emrhnsyts         |                                                      |
 
 ## Durum
 
