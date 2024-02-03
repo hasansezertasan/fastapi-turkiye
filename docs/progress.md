@@ -27,34 +27,34 @@ hide:
 
 ## İlerleyiş
 
-| Sayfa                       | Bağlantı          | Durum                 | Sebep       | Gönüllü            | Çeviren            | Gözden Geçiren                                             |
-| --------------------------- | ----------------- | --------------------- | ----------- | ------------------ | ------------------ | ---------------------------------------------------------- |
-| `/index.md`                 | {{pr_ref(10444)}} | :white_check_mark:    | Zaman Aşımı | [@hasansezertasan] | [@hasansezertasan] | [@alperiox], [@esrefzeki], [@bilalalpaslan], @mertssmnoglu |
-| `/python-types.md`          | {{pr_ref(10445)}} | :nerd:                | Zaman Aşımı | [@esrefzeki]       | [@esrefzeki]       | [@hasansezertasan], [@bilalalpaslan]                       |
-| `/features.md`              | {{pr_ref(10492)}} | :nerd:                | Zaman Aşımı | [@bilalalpaslan]   | [@bilalalpaslan]   | [@hasansezertasan]                                         |
-| `/alternatives.md`          | {{pr_ref(10502)}} | :white_check_mark:    | Yeni        | [@alperiox]        | [@alperiox]        | [@hasansezertasan]                                         |
-| `/fastapi-people.md`        | {{pr_ref(10547)}} | :nerd:                | Zaman Aşımı | [@alperiox]        | [@alperiox]        | [@hasansezertasan]                                         |
-| `/external-links.md`        | {{pr_ref(10549)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| `/newsletter.md`            | {{pr_ref(10550)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] | [@alperiox]                                                |
-| `/benchmarks.md`            | {{pr_ref(11005)}} | :white_check_mark:    | Zaman Aşımı | [@bilalalpaslan]   | [@hasansezertasan] |                                                            |
-| `/about/index.md`           | {{pr_ref(11006)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| `/history-design-future.md` | {{pr_ref(11012)}} | :white_check_mark:    | Yeni        | [@esrefzeki]       | [@hasansezertasan] |                                                            |
-| `/help/index.md`            | {{pr_ref(11013)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| `/learn/index.md`           | {{pr_ref(11014)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| `/resources/index.md`       | {{pr_ref(11020)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| `/how-to/index.md`          | {{pr_ref(11021)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
-| `/project-generation.md`    |                   | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
-| `/async.md`                 |                   | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
-| `/help-fastapi.md`          |                   | :white_square_button: | Yeni        | [@hasansezertasan] |                    |                                                            |
-| `/contributing.md`          |                   | :white_square_button: | Yeni        | [@hasansezertasan] |                    |                                                            |
-| `/tutorial/first-steps.md`  |                   | :white_square_button: | Yeni        | [@hasansezertasan] |                    |                                                            |
-| `/advanced/index.md`        |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
-| `/deployment/index.md`      |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
-| `/tutorial/index.md`        |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
-| `/tutorial/path-params.md`  | {{pr_ref(11073)}} | :nerd:                | Yeni        | @emrhnsyts         | @emrhnsyts         | [@hasansezertasan]                                         | 
-| `/tutorial/query-params.md` | {{pr_ref(11078)}} | :nerd:                | Yeni        | @emrhnsyts         | @emrhnsyts         |                                                            |
-| `/tutorial/body.md`         | {{pr_ref(11087)}} | :nerd:                | Yeni        | @emrhnsyts         | @emrhnsyts         |                                                            |
-| `/tutorial/query-params-str-validations.md` |   | :construction:        | Yeni        | @emrhnsyts         | @emrhnsyts         |                                                            |
+| Sayfa                                       | Bağlantı          | Durum                 | Sebep       | Gönüllü            | Çeviren            | Gözden Geçiren                                             |
+| ------------------------------------------- | ----------------- | --------------------- | ----------- | ------------------ | ------------------ | ---------------------------------------------------------- |
+| `/index.md`                                 | {{pr_ref(10444)}} | :white_check_mark:    | Zaman Aşımı | [@hasansezertasan] | [@hasansezertasan] | [@alperiox], [@esrefzeki], [@bilalalpaslan], @mertssmnoglu |
+| `/python-types.md`                          | {{pr_ref(10445)}} | :nerd:                | Zaman Aşımı | [@esrefzeki]       | [@esrefzeki]       | [@hasansezertasan], [@bilalalpaslan]                       |
+| `/features.md`                              | {{pr_ref(10492)}} | :nerd:                | Zaman Aşımı | [@bilalalpaslan]   | [@bilalalpaslan]   | [@hasansezertasan]                                         |
+| `/alternatives.md`                          | {{pr_ref(10502)}} | :white_check_mark:    | Yeni        | [@alperiox]        | [@alperiox]        | [@hasansezertasan]                                         |
+| `/fastapi-people.md`                        | {{pr_ref(10547)}} | :nerd:                | Zaman Aşımı | [@alperiox]        | [@alperiox]        | [@hasansezertasan]                                         |
+| `/external-links.md`                        | {{pr_ref(10549)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| `/newsletter.md`                            | {{pr_ref(10550)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] | [@alperiox]                                                |
+| `/benchmarks.md`                            | {{pr_ref(11005)}} | :white_check_mark:    | Zaman Aşımı | [@bilalalpaslan]   | [@hasansezertasan] |                                                            |
+| `/about/index.md`                           | {{pr_ref(11006)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| `/history-design-future.md`                 | {{pr_ref(11012)}} | :white_check_mark:    | Yeni        | [@esrefzeki]       | [@hasansezertasan] |                                                            |
+| `/help/index.md`                            | {{pr_ref(11013)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| `/learn/index.md`                           | {{pr_ref(11014)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| `/resources/index.md`                       | {{pr_ref(11020)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| `/how-to/index.md`                          | {{pr_ref(11021)}} | :white_check_mark:    | Yeni        | [@hasansezertasan] | [@hasansezertasan] |                                                            |
+| `/tutorial/path-params.md`                  | {{pr_ref(11073)}} | :nerd:                | Yeni        | [@emrhnsyts]       | [@emrhnsyts]       | [@hasansezertasan]                                         |
+| `/tutorial/query-params.md`                 | {{pr_ref(11078)}} | :nerd:                | Yeni        | [@emrhnsyts]       | [@emrhnsyts]       |                                                            |
+| `/tutorial/body.md`                         | {{pr_ref(11087)}} | :nerd:                | Yeni        | [@emrhnsyts]       | [@emrhnsyts]       |                                                            |
+| `/tutorial/query-params-str-validations.md` |                   | :construction:        | Yeni        | [@emrhnsyts]       | [@emrhnsyts]       |                                                            |
+| `/project-generation.md`                    |                   | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
+| `/async.md`                                 |                   | :construction:        | Yeni        | [@bilalalpaslan]   |                    |                                                            |
+| `/help-fastapi.md`                          |                   | :white_square_button: | Yeni        | [@hasansezertasan] |                    |                                                            |
+| `/contributing.md`                          |                   | :white_square_button: | Yeni        | [@hasansezertasan] |                    |                                                            |
+| `/tutorial/first-steps.md`                  |                   | :white_square_button: | Yeni        | [@hasansezertasan] |                    |                                                            |
+| `/advanced/index.md`                        |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
+| `/deployment/index.md`                      |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
+| `/tutorial/index.md`                        |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
 
 
 ## Durum
