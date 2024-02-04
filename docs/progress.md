@@ -56,7 +56,6 @@ hide:
 | `/deployment/index.md`                      |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
 | `/tutorial/index.md`                        |                   | :white_square_button: | Yeni        | [@alperiox]        |                    |                                                            |
 
-
 ## Durum
 
 <!-- Bu takip için data approach uygulanacak ve her gün çalışacak durum takip sistemi yazılacak. -->
