@@ -47,7 +47,6 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - docs/includes/abbreviations.md
-        - docs/includes/refs.md
   - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
@@ -63,12 +62,15 @@ markdown_extensions:
 plugins:
   - search
   - blog
-  - macros:
+  - markdownextradata:
+      data: docs/data/
+  # - macros:
+  #     file: docs/includes/macros.md
 
 nav:
   - Anasayfa: index.md
   - İlerleyiş: progress.md
-  - Ekip: team.md
+  - Topluluk: people.md
   - Çeviri Notları: translation-notes.md
   - Rehber: guide.md
   - Sözlük: glossary.md

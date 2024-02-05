@@ -1,0 +1,14 @@
+# Inspired by [fastapi/.github/workflows/people.yml at master · tiangolo/fastapi](https://github.com/tiangolo/fastapi/blob/master/.github/workflows/people.yml)
+name: FastAPI Pages
+
+on:
+  schedule:
+    - cron: "0 0 1 1 *"  # Update it as "0 1 * * *" to run it every day at 01:00 UTC
+
+jobs:
+  fastapi-pages:
+    if: github.repository_owner == 'hasansezertasan'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Not ready!
+        run: echo "Update me!"
