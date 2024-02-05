@@ -62,16 +62,14 @@
   state: white_check_mark
   reason: outdated
   volunteer: bilalalpaslan
-  translator:
-    - hasansezertasan
+  translator: hasansezertasan
   reviewers:
 - page_name: /about/index.md
   pr_number: 11006
   state: white_check_mark
   reason: new
   volunteer: hasansezertasan
-  translator:
-    - hasansezertasan
+  translator: hasansezertasan
   reviewers:
 - page_name: /history-design-future.md
   pr_number: 11012
