@@ -4,6 +4,32 @@ hide: [navigation, toc]
 
 # İlerleyiş
 
+FastAPI dokümantasyonunun Türkçe çeviri koordinasyon sayfasına hoş geldiniz.
+
+Bu sayfada çeviri sürecindeki ilerleyişi görebilir ve diğer gönüllülerle koordinasyon sağlayabilirsiniz.
+
+Çevirmek istediğiniz bir sayfa varsa ve bu sayfa aşağıdaki listede yoksa, [progress.yml][progress.yml] dosyasının en altına kayıt ekleyebilirsiniz.
+
+Mesela ben `/release-notes.md` sayfasını çevirmek istiyorum ve bu sayfa aşağıdaki listede yok. O zaman [progress.yml] dosyasının en altına aşağıdaki gibi bir kayıt eklemem gerekir:
+
+```yaml
+- page_name: /release-notes.md
+  pr_number:
+  state:
+  reason: new
+  volunteer: hasansezertasan
+  translator:
+  reviewers:
+```
+
+Bu kayıtta:
+
+* `page_name`: Çevirmek istediğiniz sayfanın adı.
+* `reason`: Bu sayfanın çevrilmeye ihtiyacı olup olmadığını belirtir. `new` daha önce çevirisi yapılmamış yeni bir sayfa olduğunu, `outdated` ise çevirinin güncellenmesi gerektiğini belirtir.
+* `volunteer`: Sayfayı çevirmek isteyen gönüllünün GitHub kullanıcı adı, bu durumda `hasansezertasan`.
+
+Sonraki aşama bir "Pull Request" (PR) açmaktır. PR'ı açtıktan sonra PR numarasını `pr_number` alanına eklerseniz sayfayı ziyaret edenler kabul edilmemiş PR'ları daha kolay görüp inceleyebilirler. Ha! Unutmadan, çeviri dosyasını çevirdiğinizde `translator` alanına kendi GitHub kullanıcı adınızı eklemeyi unutmayın.
+
 {% if progress %}
 <table>
     <thead>
@@ -75,3 +101,6 @@ hide: [navigation, toc]
 
 {% endfor %}
 {% endif %}
+
+
+[progress.yml]: https://github.com/hasansezertasan/fastapi-turkiye/blob/main/docs/data/progress.yml
