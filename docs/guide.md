@@ -1,5 +1,5 @@
 ---
-hide:
-  - navigation
+hide: [navigation]
 ---
+
 # Rehber

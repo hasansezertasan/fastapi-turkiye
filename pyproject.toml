@@ -9,8 +9,8 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
-mkdocs-material = "9.4.7"
 mkdocs = {extras = ["i18n"], version = "^1.5.3"}
+mkdocs-material = "9.4.7"
 mkdocs-macros-plugin = "^1.0.0"
 pyyaml = ">=5.3.1,<7.0.0"
 mkdocs-markdownextradata-plugin = ">=0.1.7,<0.3.0"
@@ -20,3 +20,16 @@ ipykernel = "^6.29.0"
 mypy = ">=1.0.0"
 ruff = "==0.2.0"
 pre-commit = ">=2.20.0, <4.0.0"
+yamllint = "^1.32.0"
+pymarkdownlnt = "^0.9.16"
+
+[tool.pymarkdown]
+plugins.MD013.enabled = false
+plugins.MD003.style = "atx"
+plugins.MD004.style = "asterisk"
+plugins.MD007.indent = 4
+# Escape disables...
+plugins.MD033.enabled = false
+plugins.MD041.enabled = false
+plugins.MD022.enabled = false
+plugins.MD003.enabled = false

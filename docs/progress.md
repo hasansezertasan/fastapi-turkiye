@@ -1,19 +1,8 @@
 ---
-hide:
-  - navigation
+hide: [navigation, toc]
 ---
+
 # İlerleyiş
-
-## Emoji Haritası
-
-| Emoji | Durum            | Açıklama                    |
-| ----- | ---------------- | --------------------------- |
-| 🤓     | İnceleme         | PR açıldı, Review ediliyor. |
-| 🚧     | Yapım Aşamasında | Çalışma devam ediyor.       |
-| 🔳     | Yapılacak        | Çevirmenini bekliyor.       |
-| ✅     | Onaylandı        | Onaylandı.                  |
-
-## İlerleyiş
 
 {% if progress %}
 <table>
@@ -37,7 +26,17 @@ hide:
                 <a href="https://github.com/tiangolo/fastapi/pull/{{item.pr_number}}">{{item.pr_number}}</a>
             {% endif %}
             </td>
-            <td>:{{item.state}}:</td>
+            <td>
+            {% if item.state == "review" %}
+                İnceleniyor
+            {% elif item.state == "done" %}
+                Tamamlandı
+            {% elif item.state == "closed" %}
+                Kapatıldı
+            {% else %}
+                Geliştirme Aşamasında
+            {% endif %}
+            </td>
             <td>
             {% if item.reason == "new" %}
                 Yeni sayfa
@@ -58,35 +57,6 @@ hide:
                 {% for reviewer in item.reviewers %}
                     <a href="https://github.com/{{reviewer}}">@{{reviewer}}</a>
                 {% endfor %}
-            {% endif %}
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-{% endif %}
-
-## Durum
-
-{% if pages_manuel %}
-<table>
-    <thead>
-        <tr>
-            <th>Sayfa</th>
-            <th>Durum</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for page in pages_manuel %}
-        <tr>
-            <td><a href="https://github.com/tiangolo/fastapi/blob/master/docs/en/docs{{page.name}}">{{page.name}}</a></td>
-            <td>
-            {% if page.state == "not-translated" %}
-                Çevirilmedi
-            {% elif page.state == "outdated" %}
-                Zaman Aşımı
-            {% elif page.state == "up-to-date" %}
-                Güncel
             {% endif %}
             </td>
         </tr>
