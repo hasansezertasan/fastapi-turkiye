@@ -128,6 +128,14 @@
   volunteer: emrhnsyts
   translator: emrhnsyts
   reviewers:
+- page_name: /contributing.md
+  pr_number: 11094
+  state: review
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+    - emrhnsyts
 - page_name: /tutorial/query-params-str-validations.md
   pr_number:
   state:
@@ -150,13 +158,6 @@
   translator:
   reviewers:
 - page_name: /help-fastapi.md
-  pr_number:
-  state:
-  reason: new
-  volunteer: hasansezertasan
-  translator:
-  reviewers:
-- page_name: /contributing.md
   pr_number:
   state:
   reason: new
