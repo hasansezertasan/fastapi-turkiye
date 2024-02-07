@@ -36,7 +36,7 @@
     - hasansezertasan
 - page_name: /fastapi-people.md
   pr_number: 10547
-  state: review
+  state: done
   reason: outdated
   volunteer: alperiox
   translator: alperiox
