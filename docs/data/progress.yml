@@ -108,7 +108,7 @@
   reviewers:
 - page_name: /tutorial/path-params.md
   pr_number: 11073
-  state: review
+  state: done
   reason: new
   volunteer: emrhnsyts
   translator: emrhnsyts
@@ -128,9 +128,9 @@
   volunteer: emrhnsyts
   translator: emrhnsyts
   reviewers:
-- page_name: /contributing.md
+- page_name: /tutorial/first-steps.md
   pr_number: 11094
-  state: review
+  state: done
   reason: new
   volunteer: hasansezertasan
   translator: hasansezertasan
@@ -153,18 +153,11 @@
 - page_name: /async.md
   pr_number:
   state:
-  reason: new
-  volunteer: bilalalpaslan
-  translator:
-  reviewers:
-- page_name: /help-fastapi.md
-  pr_number:
-  state:
-  reason: new
+  reason: outdated
   volunteer: hasansezertasan
   translator:
   reviewers:
-- page_name: /tutorial/first-steps.md
+- page_name: /help-fastapi.md
   pr_number:
   state:
   reason: new
