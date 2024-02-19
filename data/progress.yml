@@ -116,11 +116,12 @@
     - hasansezertasan
 - page_name: /tutorial/query-params.md
   pr_number: 11078
-  state: review
+  state: done
   reason: new
   volunteer: emrhnsyts
   translator: emrhnsyts
   reviewers:
+    - hasansezertasan
 - page_name: /tutorial/body.md
   pr_number: 11087
   state: review
