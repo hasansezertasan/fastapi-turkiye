@@ -138,8 +138,8 @@
   reviewers:
     - emrhnsyts
 - page_name: /tutorial/query-params-str-validations.md
-  pr_number:
-  state:
+  pr_number: 11180
+  state: review
   reason: new
   volunteer: emrhnsyts
   translator: emrhnsyts
@@ -186,3 +186,10 @@
   volunteer: alperiox
   translator:
   reviewers:
+- page_name: /tutorial/path-params-numeric-validations.md
+  pr_number:
+  state:
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:  
