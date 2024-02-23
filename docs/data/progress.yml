@@ -187,9 +187,17 @@
   translator:
   reviewers:
 - page_name: /tutorial/path-params-numeric-validations.md
+  pr_number: 11185
+  state: review
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:
+- page_name: /tutorial/body-multiple-params.md
   pr_number:
   state:
   reason: new
   volunteer: emrhnsyts
   translator: emrhnsyts
   reviewers:  
+ 
