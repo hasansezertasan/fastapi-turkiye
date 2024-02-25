@@ -13,9 +13,9 @@
 - name: /tutorial/first-steps.md
   state: outdated
 - name: /tutorial/path-params.md
-  state: not-translated
+  state: up-to-date
 - name: /tutorial/query-params.md
-  state: not-translated
+  state: up-to-date
 - name: /tutorial/body.md
   state: not-translated
 - name: /tutorial/query-params-str-validations.md
