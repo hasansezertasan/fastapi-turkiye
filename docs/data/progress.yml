@@ -163,7 +163,7 @@
   state:
   reason: new
   volunteer: emrhnsyts
-  translator: emrhnsyts
+  translator:
   reviewers:
 - page_name: /project-generation.md
   pr_number:
