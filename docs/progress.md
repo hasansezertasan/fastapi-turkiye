@@ -102,5 +102,4 @@ Sonraki aşama bir "Pull Request" (PR) açmaktır. PR'ı açtıktan sonra PR num
 {% endfor %}
 {% endif %}
 
-
 [progress.yml]: https://github.com/hasansezertasan/fastapi-turkiye/blob/main/docs/data/progress.yml

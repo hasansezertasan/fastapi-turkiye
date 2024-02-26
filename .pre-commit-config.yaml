@@ -10,13 +10,13 @@ repos:
       - id: check-added-large-files
       - id: check-merge-conflict
       - id: detect-private-key
-#   - repo: https://github.com/jackdewinter/pymarkdown
-#     rev: 0.9.16
-#     hooks:
-#       - id: pymarkdown
-#         pass_filenames: false
-#         args:
-#           - --config=pyproject.toml
-#           - scan
-#           - .
-#           - ./docs
+  - repo: https://github.com/jackdewinter/pymarkdown
+    rev: 0.9.17
+    hooks:
+      - id: pymarkdown
+        pass_filenames: false
+        args:
+          - --config=pyproject.toml
+          - scan
+          - .
+          - ./docs
