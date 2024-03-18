@@ -1,6 +1,7 @@
 ---
 hide: [navigation, toc]
 ---
+
 # Sayfalar
 
 {% if pages_manuel %}
