@@ -20,3 +20,8 @@ repos:
           - scan
           - .
           - ./docs
+  - repo: https://github.com/johnfraney/flake8-markdown
+    rev: v0.5.0
+    hooks:
+      - id: flake8-markdown
+        args: ["'*.md'"]
