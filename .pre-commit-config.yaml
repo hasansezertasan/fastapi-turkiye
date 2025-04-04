@@ -6,28 +6,28 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
-        - id: check-added-large-files
-          name: Check added large files
-          args:
-              - --maxkb=1000
-        - id: check-toml
-          name: Check TOML
-        - id: check-yaml
-          name: Check YAML
-          args:
-              - --unsafe
-        - id: check-json
-          name: Check JSON
-        - id: end-of-file-fixer
-          name: End of file fixer
-        - id: trailing-whitespace
-          name: Trailing whitespace
-        - id: debug-statements
-          name: Debug Statements
-        - id: check-merge-conflict
-          name: Check merge conflict
-        - id: detect-private-key
-          name: Detect private key
+      - id: check-added-large-files
+        name: Check added large files
+        args:
+          - --maxkb=1000
+      - id: check-toml
+        name: Check TOML
+      - id: check-yaml
+        name: Check YAML
+        args:
+          - --unsafe
+      - id: check-json
+        name: Check JSON
+      - id: end-of-file-fixer
+        name: End of file fixer
+      - id: trailing-whitespace
+        name: Trailing whitespace
+      - id: debug-statements
+        name: Debug Statements
+      - id: check-merge-conflict
+        name: Check merge conflict
+      - id: detect-private-key
+        name: Detect private key
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.37.0
     hooks:
@@ -36,8 +36,8 @@ repos:
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
-        - id: actionlint
-          name: Actionlint Linter
+      - id: actionlint
+        name: Actionlint Linter
   - repo: https://github.com/mpalmer/action-validator
     rev: v0.6.0
     hooks:
@@ -51,8 +51,8 @@ repos:
   - repo: https://github.com/crate-ci/typos
     rev: v1.30.2
     hooks:
-        - id: typos
-          name: Typos Linter
+      - id: typos
+        name: Typos Linter
   - repo: https://github.com/google/yamlfmt
     rev: v0.16.0
     hooks:
