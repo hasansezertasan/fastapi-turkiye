@@ -1,8 +1,12 @@
+<!--
 ---
 hide: [navigation, toc]
 ---
+-->
+
 # Sayfalar
 
+<!-- markdownlint-disable -->
 {% if pages_manuel %}
 <table>
     <thead>
@@ -42,3 +46,4 @@ hide: [navigation, toc]
 
 {% endfor %}
 {% endif %}
+<!-- markdownlint-enable -->

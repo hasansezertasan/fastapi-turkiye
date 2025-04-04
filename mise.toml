@@ -1,0 +1,38 @@
+[tools]
+uv = "0.6.7"
+actionlint = "1.7.7"
+action-validator = "0.6.0"
+markdownlint-cli2 = "0.17.2"
+yamlfmt = "0.16.0"
+typos = "1.30.2"
+yamllint = "1.37.0"
+pre-commit = "4.1.0"
+taplo = "0.9.3"
+"pipx:mkdocs" = { version = "1.6.1", extras = "i18n", uvx_args = "--with-requirements requirements.txt" }
+
+[tasks."style:lint"]
+description = "Linting"
+run = """
+mise exec yamllint -- yamllint .
+mise exec actionlint -- actionlint
+mise exec action-validator -- action-validator
+mise exec markdownlint-cli2 -- markdownlint-cli2 .
+mise exec taplo -- taplo lint pyproject.toml
+mise exec typos -- typos .
+"""
+
+[tasks."style:format"]
+description = "Run the formatters"
+run = """
+mise exec yamlfmt -- yamlfmt .
+mise exec taplo -- taplo format .
+"""
+
+[tasks."docs:serve"]
+description = "Serving Docs"
+run = "mise exec pipx:mkdocs -- mkdocs serve"
+
+[tasks."docs:build"]
+description = "Building Docs"
+depends = ["style:lint", "style:format"]
+run = "mise exec pipx:mkdocs -- mkdocs build --clean"

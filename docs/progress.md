@@ -1,6 +1,8 @@
+<!--
 ---
 hide: [navigation, toc]
 ---
+-->
 
 # İlerleyiş
 
@@ -30,6 +32,7 @@ Bu kayıtta:
 
 Sonraki aşama bir "Pull Request" (PR) açmaktır. PR'ı açtıktan sonra PR numarasını `pr_number` alanına eklerseniz sayfayı ziyaret edenler kabul edilmemiş PR'ları daha kolay görüp inceleyebilirler. Ha! Unutmadan, çeviri dosyasını çevirdiğinizde `translator` alanına kendi GitHub kullanıcı adınızı eklemeyi unutmayın.
 
+<!-- markdownlint-disable -->
 {% if progress %}
 <table>
     <thead>
@@ -101,6 +104,6 @@ Sonraki aşama bir "Pull Request" (PR) açmaktır. PR'ı açtıktan sonra PR num
 
 {% endfor %}
 {% endif %}
-
+<!-- markdownlint-enable -->
 
 [progress.yml]: https://github.com/hasansezertasan/fastapi-turkiye/blob/main/docs/data/progress.yml

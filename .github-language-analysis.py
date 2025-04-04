@@ -1,1 +1,1 @@
-# Github dil analizi için oluşturumluştur.
+# Github dil analizi için oluşturulmuştur.
