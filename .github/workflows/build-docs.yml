@@ -1,0 +1,25 @@
+---
+name: Build Docs
+on:
+  workflow_dispatch:  # Allows manual triggering of the workflow
+  push:
+    branches: ["main"]  # Triggers on pushes to the main branch
+  pull_request:
+    branches: ["main"]  # Triggers on pull requests targeting the main branch
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Step 1: Check out the repository
+      # Description: Checks out the repository so that the workflow can access its contents.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      # Step 2: Install mise using the specified action
+      # Description: Installs mise, along with the tools defined in the mise.toml file.
+      - name: Install mise
+        uses: jdx/mise-action@v2
+      # Step 3: Build the documentation
+      # Description: Runs the style:lint, style:format, and docs:build commands using mise.
+      - name: Build docs
+        run: mise run docs:build

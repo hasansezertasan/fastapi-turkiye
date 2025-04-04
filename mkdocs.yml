@@ -1,10 +1,10 @@
+---
 site_name: FastAPI Türkiye
 site_description: FastAPI Türkiye Topluluğu Web Sitesi
 site_url: https://hasansezertasan.github.io/fastapi-turkiye/
 repo_name: hasansezertasan/fastapi-turkiye
 repo_url: https://github.com/hasansezertasan/fastapi-turkiye/
 edit_uri: https://github.com/hasansezertasan/fastapi-turkiye/tree/main/docs
-
 theme:
   name: material
   language: tr
@@ -34,7 +34,6 @@ theme:
     - navigation.sections
     - navigation.top
     - navigation.tabs
-
 markdown_extensions:
   - toc:
       permalink: true
@@ -58,14 +57,13 @@ markdown_extensions:
   - md_in_html
   - tables
   - def_list
-
 plugins:
   - search
   - blog
   - markdownextradata:
       data: docs/data/
-  # - macros:
-  #     file: docs/includes/macros.md
+# - macros:
+#     file: docs/includes/macros.md
 
 nav:
   - Anasayfa: index.md
@@ -79,10 +77,8 @@ nav:
       - Markdown: tutorials/markdown.md
       - MkDocs: tutorials/mkdocs.md
   - Blog: blog
-
 extra_css:
   - css/custom.css
-
 extra:
   social:
     - icon: fontawesome/brands/telegram

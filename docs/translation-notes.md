@@ -1,6 +1,8 @@
+<!--
 ---
 hide: [navigation]
 ---
+-->
 
 # Çeviri Notları
 

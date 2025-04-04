@@ -1,11 +1,14 @@
+<!--
 ---
 hide: [navigation]
 ---
+-->
 
 # Topluluk
 
 ## Kurucular
 
+<!-- markdownlint-disable -->
 {% if founders %}
 <div class="user-list user-list-center">
 {% for member in founders %}
@@ -42,3 +45,4 @@ hide: [navigation]
 
 {% endfor %}
 {% endif %}
+<!-- markdownlint-enable -->

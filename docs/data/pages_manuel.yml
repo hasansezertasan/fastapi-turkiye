@@ -1,3 +1,4 @@
+---
 - name: /index.md
   state: outdated
 - name: /features.md

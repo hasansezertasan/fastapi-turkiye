@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD046 -->
 # MkDocs
 
 ## Admonitions
