@@ -1,0 +1,12 @@
+{
+  "config": {
+    "default": true,
+    "MD013": false
+  },
+  "fix": true,
+  "globs": [
+    "**/*.md",
+    "**/*.markdown"
+  ],
+  "gitignore": true
+}

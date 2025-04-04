@@ -1,6 +1,8 @@
+<!--
 ---
 hide: [navigation]
 ---
+-->
 
 # FastAPI Türkiye
 
