@@ -1,0 +1,217 @@
+---
+- page_name: /index.md
+  pr_number: 10444
+  state: done
+  reason: outdated
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+    - alperiox
+    - esrefzeki
+    - bilalalpaslan
+    - mertssmnoglu
+- page_name: /python-types.md
+  pr_number: 10445
+  state: closed
+  reason: outdated
+  volunteer: esrefzeki
+  translator: esrefzeki
+  reviewers:
+    - hasansezertasan
+    - bilalalpaslan
+- page_name: /features.md
+  pr_number: 10492
+  state: closed
+  reason: outdated
+  volunteer: bilalalpaslan
+  translator: bilalalpaslan
+  reviewers:
+    - hasansezertasan
+- page_name: /alternatives.md
+  pr_number: 10502
+  state: done
+  reason: new
+  volunteer: alperiox
+  translator: alperiox
+  reviewers:
+    - hasansezertasan
+- page_name: /fastapi-people.md
+  pr_number: 10547
+  state: done
+  reason: outdated
+  volunteer: alperiox
+  translator: alperiox
+  reviewers:
+    - hasansezertasan
+- page_name: /external-links.md
+  pr_number: 10549
+  state: done
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+- page_name: /newsletter.md
+  pr_number: 10550
+  state: done
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+    - alperiox
+- page_name: /benchmarks.md
+  pr_number: 11005
+  state: done
+  reason: outdated
+  volunteer: bilalalpaslan
+  translator: hasansezertasan
+  reviewers:
+- page_name: /about/index.md
+  pr_number: 11006
+  state: done
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+- page_name: /history-design-future.md
+  pr_number: 11012
+  state: done
+  reason: new
+  volunteer: esrefzeki
+  translator: hasansezertasan
+  reviewers:
+- page_name: /help/index.md
+  pr_number: 11013
+  state: done
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+- page_name: /learn/index.md
+  pr_number: 11014
+  state: done
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+- page_name: /resources/index.md
+  pr_number: 11020
+  state: done
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+- page_name: /how-to/index.md
+  pr_number: 11021
+  state: done
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+- page_name: /tutorial/path-params.md
+  pr_number: 11073
+  state: done
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:
+    - hasansezertasan
+- page_name: /tutorial/query-params.md
+  pr_number: 11078
+  state: done
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:
+    - hasansezertasan
+- page_name: /tutorial/body.md
+  pr_number: 11087
+  state: review
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:
+- page_name: /tutorial/first-steps.md
+  pr_number: 11094
+  state: done
+  reason: new
+  volunteer: hasansezertasan
+  translator: hasansezertasan
+  reviewers:
+    - emrhnsyts
+- page_name: /tutorial/query-params-str-validations.md
+  pr_number: 11180
+  state: review
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:
+- page_name: /tutorial/path-params-numeric-validations.md
+  pr_number: 11185
+  state: review
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:
+- page_name: /tutorial/body-multiple-params.md
+  pr_number: 11202
+  state: review
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:
+- page_name: /tutorial/body-fields.md
+  pr_number: 11207
+  state: review
+  reason: new
+  volunteer: emrhnsyts
+  translator: emrhnsyts
+  reviewers:
+- page_name: /tutorial/body-nested-models.md
+  pr_number:
+  state:
+  reason: new
+  volunteer: emrhnsyts
+  translator:
+  reviewers:
+- page_name: /project-generation.md
+  pr_number:
+  state:
+  reason: new
+  volunteer: bilalalpaslan
+  translator:
+  reviewers:
+- page_name: /async.md
+  pr_number:
+  state:
+  reason: outdated
+  volunteer: hasansezertasan
+  translator:
+  reviewers:
+- page_name: /help-fastapi.md
+  pr_number:
+  state:
+  reason: new
+  volunteer: hasansezertasan
+  translator:
+  reviewers:
+- page_name: /advanced/index.md
+  pr_number:
+  state:
+  reason: new
+  volunteer: alperiox
+  translator:
+  reviewers:
+- page_name: /deployment/index.md
+  pr_number:
+  state:
+  reason: new
+  volunteer: alperiox
+  translator:
+  reviewers:
+- page_name: /tutorial/index.md
+  pr_number:
+  state:
+  reason: new
+  volunteer: alperiox
+  translator:
+  reviewers:
