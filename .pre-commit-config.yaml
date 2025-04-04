@@ -38,11 +38,6 @@ repos:
     hooks:
       - id: actionlint
         name: Actionlint Linter
-  - repo: https://github.com/mpalmer/action-validator
-    rev: v0.6.0
-    hooks:
-      - id: action-validator
-        name: Action Validator
   - repo: https://github.com/DavidAnson/markdownlint-cli2
     rev: v0.17.2
     hooks:
