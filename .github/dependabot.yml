@@ -2,10 +2,12 @@
 version: 2
 updates:
   - package-ecosystem: "pip"
+    target-branch: dev
     directory: "/"
     schedule:
       interval: monthly
   - package-ecosystem: "github-actions"
+    target-branch: dev
     directory: "/"
     schedule:
       interval: monthly
