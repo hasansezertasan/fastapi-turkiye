@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      NETLIFY_ALIAS: "${{ github.event.pull_request.head.ref }}-${{ github.event.number }}"  # Define the variable here
+      NETLIFY_ALIAS: "${{ github.event.pull_request.head.ref | replace('.', '-') | replace('/', '-') }}-${{ github.event.number }}"  # Sanitize the variable here
     steps:
       # Step 1: Check out the repository
       # Description: Checks out the repository so that the workflow can access its contents.
