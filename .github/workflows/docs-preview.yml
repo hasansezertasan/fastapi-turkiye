@@ -43,5 +43,5 @@ jobs:
       - name: Comment Deployment URL
         uses: peter-evans/create-or-update-comment@v4
         with:
-          issue-number: ${{ github.event.number }}
+          issue-number: ${{ github.event.pull_request.number }}
           body: ":rocket: Deployed on https://${{ github.event.number }}--fastapi-turkiye-docs-preview.netlify.app"
