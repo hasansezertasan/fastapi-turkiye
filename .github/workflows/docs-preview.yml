@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
-      NETLIFY_ALIAS: "${{ github.sha }}"  # Use a random unique value (commit SHA)
+      NETLIFY_ALIAS: "${{ github.sha::8 }}"  # Use the first 8 characters of the commit SHA
     steps:
       # Step 1: Check out the repository
       # Description: Checks out the repository so that the workflow can access its contents.
