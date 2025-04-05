@@ -39,11 +39,33 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Netlify authentication token
           MESSAGE: "#${{ github.event.number }}: ${{ github.event.pull_request.title }}"
         run: "netlify deploy --dir ./site/ --alias ${{ env.NETLIFY_ALIAS }} --message \"${{ env.MESSAGE }}\" --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=60"
-      # Step 5: Comment on the pull request with the deployment URL
+      # Step 5: Find existing comment
+      # Description: Uses the find-comment action to check if a comment from the GitHub Actions bot already exists.
+      # Note: The comment is identified by the presence of a specific body text.
+      - name: Find Comment
+        uses: peter-evans/find-comment@v3
+        id: fc
+        with:
+          issue-number: ${{ github.event.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: ":rocket: Deployed on https://$"
+      # Step 6: Comment on the pull request with the deployment URL
       # Description: Uses the create-or-update-comment action to post a comment on the pull request with the deployment URL.
       # Note: The URL is constructed using the pull request number and the Netlify site alias.
       - name: Comment Deployment URL
+        if: steps.fc.outputs.comment-id == ''
         uses: peter-evans/create-or-update-comment@v4
         with:
           issue-number: ${{ github.event.number }}
           body: ":rocket: Deployed on https://${{ github.event.number }}--fastapi-turkiye-docs-preview.netlify.app"
+      # Step 7: Update the existing comment if it exists
+      # Description: If a comment already exists, update it with the new deployment URL.
+      # Note: The comment ID is retrieved from the steps.fc output.
+      - name: Update Deployment URL
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.number }}
+          body: ":rocket: Deployed on https://${{ github.event.number }}--fastapi-turkiye-docs-preview.netlify.app"
+          edit-mode: replace
