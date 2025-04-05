@@ -2,8 +2,10 @@
 name: Deploy Docs
 on:
   workflow_dispatch:  # Allows manual triggering of the workflow
-  release:
-    types: [published]  # Trigger on release publication
+  push:
+    branches: ["main", "dev"]  # Triggers on pushes to the main branch
+    paths-ignore:
+      - ".github/**"  # Ignores changes in the .github directory
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}  # Grouping by workflow name and reference
   cancel-in-progress: true  # Cancel any in-progress runs for the same group

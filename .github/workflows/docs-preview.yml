@@ -1,11 +1,14 @@
 ---
-name: Build Docs
+name: Preview Docs
 on:
   workflow_dispatch:  # Allows manual triggering of the workflow
-  push:
-    branches: ["main"]  # Triggers on pushes to the main branch
   pull_request:
     branches: ["main"]  # Triggers on pull requests targeting the main branch
+    paths:  # Only triggers if specific files or directories are changed
+      - "docs/**"
+      - "mise.toml"
+      - "mkdocs.yml"
+      - "requirements.txt"
 jobs:
   deploy:
     runs-on: ubuntu-latest
