@@ -36,7 +36,7 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}  # Netlify site ID
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Netlify authentication token
           MESSAGE: "#${{ github.event.number }}: ${{ github.event.pull_request.title }}"
-        run: "netlify deploy --dir ./site/ --alias ${{ env.NETLIFY_ALIAS }} --message ${{ env.MESSAGE }} --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=60"
+        run: "netlify deploy --dir ./site/ --alias ${{ env.NETLIFY_ALIAS }} --message \"${{ env.MESSAGE }}\" --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=60"
       # Step 5: Comment on the pull request with the deployment URL
       # Description: Uses the create-or-update-comment action to post a comment on the pull request with the deployment URL.
       # Note: The URL is constructed using the pull request number and the Netlify site alias.
