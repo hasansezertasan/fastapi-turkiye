@@ -9,6 +9,7 @@ yamllint = "1.37.0"
 pre-commit = "4.1.0"
 taplo = "0.9.3"
 "pipx:mkdocs" = { version = "1.6.1", extras = "i18n", uvx_args = "--with-requirements requirements.txt" }
+"npm:netlify-cli" = "19.1.5"
 
 [tasks."style:lint"]
 description = "Linting"

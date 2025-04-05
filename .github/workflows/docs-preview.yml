@@ -3,16 +3,20 @@ name: Preview Docs
 on:
   workflow_dispatch:  # Allows manual triggering of the workflow
   pull_request:
-    branches: ["main"]  # Triggers on pull requests targeting the main branch
+    branches: ["main", "dev"]  # Triggers on pull requests targeting the main or dev branches
     paths:  # Only triggers if specific files or directories are changed
       - "docs/**"
       - "mise.toml"
       - "mkdocs.yml"
       - "requirements.txt"
+permissions:
+  pull-requests: write  # Required for commenting on pull requests
 jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      NETLIFY_ALIAS: ${{ github.event.number }}  # Unique alias for the deployment
     steps:
       # Step 1: Check out the repository
       # Description: Checks out the repository so that the workflow can access its contents.
@@ -26,3 +30,43 @@ jobs:
       # Description: Runs the style:lint, style:format, and docs:build commands using mise.
       - name: Build docs
         run: mise run docs:build
+      # Step 4: Deploy to Netlify
+      # Description: Deploys the built documentation to Netlify using the netlify-cli.
+      # Note: The site ID and authentication token are provided as secrets for security.
+      - name: Deploy to Netlify
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}  # Netlify site ID
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Netlify authentication token
+          MESSAGE: "#${{ github.event.number }}: ${{ github.event.pull_request.title }}"
+        run: "netlify deploy --dir ./site/ --alias ${{ env.NETLIFY_ALIAS }} --message \"${{ env.MESSAGE }}\" --site ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --timeout=60"
+      # Step 5: Find existing comment
+      # Description: Uses the find-comment action to check if a comment from the GitHub Actions bot already exists.
+      # Note: The comment is identified by the presence of a specific body text.
+      - name: Find Comment
+        uses: peter-evans/find-comment@v3
+        id: fc
+        with:
+          issue-number: ${{ github.event.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: ":rocket: Deployed on https://"
+      # Step 6: Comment on the pull request with the deployment URL
+      # Description: Uses the create-or-update-comment action to post a comment on the pull request with the deployment URL.
+      # Note: The URL is constructed using the pull request number and the Netlify site alias.
+      - name: Comment Deployment URL
+        if: steps.fc.outputs.comment-id == ''
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.number }}
+          body: ":rocket: Deployed on https://${{ env.NETLIFY_ALIAS }}--fastapi-turkiye-docs-preview.netlify.app"  # Use the variable
+      # Step 7: Update the existing comment if it exists
+      # Description: If a comment already exists, update it with the new deployment URL.
+      # Note: The comment ID is retrieved from the steps.fc output.
+      - name: Update Deployment URL
+        if: steps.fc.outputs.comment-id != ''
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
+          issue-number: ${{ github.event.number }}
+          body: ":rocket: Deployed on https://${{ env.NETLIFY_ALIAS }}--fastapi-turkiye-docs-preview.netlify.app"  # Use the variable
+          edit-mode: replace
