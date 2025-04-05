@@ -48,7 +48,7 @@ jobs:
         with:
           issue-number: ${{ github.event.number }}
           comment-author: 'github-actions[bot]'
-          body-includes: ":rocket: Deployed on https://$"
+          body-includes: ":rocket: Deployed on https://"
       # Step 6: Comment on the pull request with the deployment URL
       # Description: Uses the create-or-update-comment action to post a comment on the pull request with the deployment URL.
       # Note: The URL is constructed using the pull request number and the Netlify site alias.
