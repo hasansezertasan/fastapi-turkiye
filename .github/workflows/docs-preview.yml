@@ -3,7 +3,7 @@ name: Preview Docs
 on:
   workflow_dispatch:  # Allows manual triggering of the workflow
   pull_request:
-    branches: ["main"]  # Triggers on pull requests targeting the main branch
+    branches: ["main", "dev"]  # Triggers on pull requests targeting the main branch
     paths:  # Only triggers if specific files or directories are changed
       - "docs/**"
       - "mise.toml"
@@ -26,3 +26,22 @@ jobs:
       # Description: Runs the style:lint, style:format, and docs:build commands using mise.
       - name: Build docs
         run: mise run docs:build
+      # Step 4: Deploy to Netlify
+      # Description: Deploys the built documentation to Netlify using the netlify-cli.
+      # Note: The site ID and authentication token are provided as secrets for security.
+      - name: Deploy to Netlify
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub token for authentication
+          NETLIFY_ALIAS: ${{ github.event.number }}  # Netlify alias for the deployment
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}  # Netlify site ID
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}  # Netlify authentication token
+          MESSAGE: "#${{ github.event.number }}: ${{ github.event.pull_request.title }}"
+        run: "netlify deploy  -d ./site/ -m ${{ env.MESSAGE }} -s ${{ secrets.NETLIFY_SITE_ID }} --auth ${{ secrets.NETLIFY_AUTH_TOKEN }} --alias ${{ env.NETLIFY_ALIAS }} --timeout=60"
+      # Step 5: Comment on the pull request with the deployment URL
+      # Description: Uses the create-or-update-comment action to post a comment on the pull request with the deployment URL.
+      # Note: The URL is constructed using the pull request number and the Netlify site alias.
+      - name: Comment Deployment URL
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.number }}
+          body: ":rocket: Deployed on https://${{ github.event.number }}--fastapi-turkiye-docs-preview.netlify.app"
