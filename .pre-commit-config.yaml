@@ -44,7 +44,7 @@ repos:
       - id: markdownlint-cli2
         name: Markdown Linter
   - repo: https://github.com/crate-ci/typos
-    rev: v1.30.2
+    rev: v1
     hooks:
       - id: typos
         name: Typos Linter
