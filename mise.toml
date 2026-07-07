@@ -13,18 +13,18 @@ taplo = "0.9.3"
 [tasks."style:lint"]
 description = "Linting"
 run = """
-mise exec yamllint -- yamllint .
+mise exec yamllint -- yamllint -c .config/.yamllint.yaml .
 mise exec actionlint -- actionlint
 mise exec action-validator -- action-validator
-mise exec markdownlint-cli2 -- markdownlint-cli2 .
+mise exec markdownlint-cli2 -- markdownlint-cli2 --config .config/.markdownlint-cli2.jsonc .
 mise exec taplo -- taplo lint pyproject.toml
-mise exec typos -- typos .
+mise exec typos -- typos --config .config/_typos.toml .
 """
 
 [tasks."style:format"]
 description = "Run the formatters"
 run = """
-mise exec yamlfmt -- yamlfmt .
+mise exec yamlfmt -- yamlfmt -conf .config/.yamlfmt.yml .
 mise exec taplo -- taplo format .
 """
 
