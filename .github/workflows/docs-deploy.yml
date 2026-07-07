@@ -3,7 +3,7 @@ name: Deploy Docs
 on:
   workflow_dispatch:  # Allows manual triggering of the workflow
   push:
-    branches: ["main", "dev"]  # Triggers on pushes to the main branch
+    branches: ["main"]  # Triggers on pushes to the main branch
     paths-ignore:
       - ".github/**"  # Ignores changes in the .github directory
 concurrency:
@@ -19,12 +19,12 @@ jobs:
       # Step 1: Check out the repository
       # Description: Checks out the repository so that the workflow can access its contents.
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       # Step 2: Install mise using the specified action
       # Description: Installs mise, a tool for building and deploying documentation, along
       # with the tools defined in the mise.toml file.
       - name: Install mise
-        uses: jdx/mise-action@v2
+        uses: jdx/mise-action@v4
       # Step 3: Build and deploy the documentation
       # Description: Builds the documentation using mkdocs and pushes it to the gh-pages branch.
       - name: Build and deploy docs
