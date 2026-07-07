@@ -3,7 +3,7 @@ name: Deploy Docs
 on:
   workflow_dispatch:  # Allows manual triggering of the workflow
   push:
-    branches: ["main", "dev"]  # Triggers on pushes to the main branch
+    branches: ["main"]  # Triggers on pushes to the main branch
     paths-ignore:
       - ".github/**"  # Ignores changes in the .github directory
 concurrency:
