@@ -33,6 +33,9 @@ repos:
     hooks:
       - id: yamllint
         name: YAML Linter
+        args:
+          - -c
+          - .config/.yamllint.yaml
   - repo: https://github.com/rhysd/actionlint
     rev: v1.7.7
     hooks:
@@ -43,13 +46,22 @@ repos:
     hooks:
       - id: markdownlint-cli2
         name: Markdown Linter
+        args:
+          - --config
+          - .config/.markdownlint-cli2.jsonc
   - repo: https://github.com/crate-ci/typos
     rev: v1.30.2
     hooks:
       - id: typos
         name: Typos Linter
+        args:
+          - --config
+          - .config/_typos.toml
   - repo: https://github.com/google/yamlfmt
     rev: v0.16.0
     hooks:
       - id: yamlfmt
         name: YAML Formatter
+        args:
+          - -conf
+          - .config/.yamlfmt.yml
