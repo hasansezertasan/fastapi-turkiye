@@ -26,6 +26,7 @@ jobs:
       - name: Install mise
         uses: jdx/mise-action@v4
       # Step 3: Build and deploy the documentation
-      # Description: Builds the documentation using mkdocs and pushes it to the gh-pages branch.
+      # Description: Builds the documentation using mkdocs (run through uv, which syncs the
+      # locked dependencies from pyproject.toml/uv.lock) and pushes it to the gh-pages branch.
       - name: Build and deploy docs
-        run: mkdocs gh-deploy --force
+        run: uv run mkdocs gh-deploy --force
