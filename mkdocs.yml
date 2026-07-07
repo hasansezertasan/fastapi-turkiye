@@ -67,10 +67,7 @@ plugins:
 
 nav:
   - Anasayfa: index.md
-  - İlerleyiş: progress.md
-  - Sayfalar: pages.md
   - Topluluk: people.md
-  - Çeviri Notları: translation-notes.md
   - Rehber: guide.md
   - Sözlük: glossary.md
   - Öğreticiler:
