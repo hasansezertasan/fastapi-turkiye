@@ -3,17 +3,19 @@ name = "fastapi-turkiye"
 version = "0.0.0"
 description = "Turkish translation of the FastAPI documentation."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.14"
 license = "MIT"
-
-[dependency-groups]
-docs = [
+dependencies = [
   "mkdocs[i18n]>=1.6.1",
   "mkdocs-material>=9.7.6",
-  "mkdocs-macros-plugin>=1.5.0",
   "mkdocs-markdownextradata-plugin>=0.2.6",
   "pyyaml>=6.0.3",
 ]
 
-[tool.uv]
-default-groups = ["docs"]
+[dependency-groups]
+# Lint tools used by prek hooks. `uv run` installs this group by default; the
+# docs deploy skips it with `--no-dev`.
+dev = [
+  "detect-secrets>=1.5.0",
+  "editorconfig-checker>=3.11.1",
+]

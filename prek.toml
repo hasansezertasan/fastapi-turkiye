@@ -1,0 +1,93 @@
+# Configuration file for `prek`, a fast Rust-native pre-commit replacement.
+# See https://prek.j178.dev for more information.
+#:schema https://www.schemastore.org/prek.json
+# Hook revisions are kept current by Renovate through the prek.toml custom manager
+# in the shared github>hasansezertasan/renovate-config preset.
+default_stages = ["pre-commit", "pre-push"]
+
+# Fast Rust-native reimplementations of common pre-commit-hooks. No git clone.
+[[repos]]
+repo = "builtin"
+hooks = [
+  { id = "check-added-large-files", name = "Check added large files", args = [
+    "--maxkb=1000",
+  ] },
+  { id = "check-toml", name = "Check TOML" },
+  { id = "check-json", name = "Check JSON" },
+  { id = "end-of-file-fixer", name = "End of file fixer" },
+  { id = "trailing-whitespace", name = "Trailing whitespace" },
+  { id = "check-merge-conflict", name = "Check Merge Conflict", args = [
+    "--assume-in-merge",
+  ] },
+  { id = "check-case-conflict", name = "Check case conflict" },
+  { id = "detect-private-key", name = "Detect Private Key" },
+]
+
+# check-yaml has no Rust builtin (it needs a YAML loader), so it stays on the
+# upstream repo.
+[[repos]]
+repo = "https://github.com/pre-commit/pre-commit-hooks"
+rev = "v6.0.0"
+hooks = [
+  { id = "check-yaml" },
+  { id = "mixed-line-ending", args = ["--fix=lf"] },
+]
+
+[[repos]]
+repo = "https://github.com/astral-sh/uv-pre-commit"
+rev = "0.13.0"
+hooks = [{ id = "uv-lock", name = "Update the uv lockfile" }]
+
+[[repos]]
+repo = "local"
+hooks = [
+  # These run from the project's dev dependency group so each version has a single source
+  # of truth in uv.lock. editorconfig-checker scans the whole tree (respecting
+  # .gitignore), so filenames are not passed.
+  { id = "editorconfig-checker", name = "EditorConfig Checker", entry = "uv run --locked ec", language = "system", pass_filenames = false },
+  # Blocks commits that add secrets not already recorded in .secrets.baseline.
+  { id = "detect-secrets", name = "Detect Secrets", entry = "uv run --locked detect-secrets-hook --baseline .secrets.baseline", language = "system" },
+]
+
+[[repos]]
+repo = "https://github.com/crate-ci/typos"
+rev = "v1.51.1"
+hooks = [{ id = "typos", name = "Typos Linter", args = ["--config", ".github/_typos.toml"] }]
+
+[[repos]]
+repo = "https://github.com/python-jsonschema/check-jsonschema"
+rev = "0.38.2"
+hooks = [
+  { id = "check-github-workflows" },
+  { id = "check-renovate" },
+]
+
+[[repos]]
+repo = "https://github.com/rhysd/actionlint"
+rev = "v1.7.12"
+hooks = [{ id = "actionlint", name = "Actionlint Linter" }]
+
+[[repos]]
+repo = "https://github.com/mpalmer/action-validator"
+rev = "v0.9.0"
+hooks = [{ id = "action-validator", name = "Action Validator" }]
+
+[[repos]]
+repo = "https://github.com/zizmorcore/zizmor-pre-commit"
+rev = "v1.30.1"
+hooks = [{ id = "zizmor", name = "Zizmor GitHub Actions Auditor" }]
+
+[[repos]]
+repo = "https://github.com/adrienverge/yamllint.git"
+rev = "v1.38.0"
+hooks = [{ id = "yamllint", name = "YAML Linter", args = ["-c", ".github/yamllint.yaml"] }]
+
+[[repos]]
+repo = "https://github.com/DavidAnson/markdownlint-cli2"
+rev = "v0.23.3"
+hooks = [{ id = "markdownlint-cli2", name = "Markdown Linter", args = ["--config", ".github/markdownlint-cli2.jsonc"] }]
+
+[[repos]]
+repo = "https://github.com/google/yamlfmt"
+rev = "v0.21.0"
+hooks = [{ id = "yamlfmt", name = "YAML Formatter", args = ["-conf", ".github/yamlfmt.yml"] }]
