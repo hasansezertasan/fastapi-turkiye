@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
       # Step 2: Install mise using the specified action
       # Description: Installs mise, a tool for building and deploying documentation, along
-      # with the tools defined in the mise.toml file.
+      # with the tools defined in the .config/mise.toml file.
       - name: Install mise
         uses: jdx/mise-action@2d8d4cafcbd33be2ea37d2b6f5ad595363d1f1ca # v5
       # Step 3: Build and deploy the documentation
