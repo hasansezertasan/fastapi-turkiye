@@ -24,9 +24,7 @@ theme:
         name: Switch to light mode
   features:
     - content.action.view
-    - content.code.annotate
     - content.code.copy
-    - content.tabs.link
     - search.suggest
     - search.highlight
     - navigation.instant
@@ -37,26 +35,13 @@ theme:
 markdown_extensions:
   - toc:
       permalink: true
-      title: İçindekiler
   - abbr
   - admonition
-  - pymdownx.emoji
-  - pymdownx.details
-  - pymdownx.inlinehilite
   - pymdownx.snippets:
       auto_append:
         - docs/includes/abbreviations.md
   - pymdownx.superfences
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list
-  - md_in_html
-  - tables
-  - def_list
+  - pymdownx.highlight
 plugins:
   - search
   - blog
