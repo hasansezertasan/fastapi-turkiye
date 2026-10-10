@@ -19,3 +19,7 @@ dev = [
   "detect-secrets>=1.5.0",
   "editorconfig-checker>=3.11.1",
 ]
+
+[tool.typos.default.extend-words]
+metod = "metod"
+bu = "bu"
