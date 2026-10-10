@@ -6,7 +6,7 @@ markdownlint-cli2 = "0.23.3"
 yamlfmt = "0.21.0"
 typos = "1.51.1"
 yamllint = "1.38.0"
-pre-commit = "4.1.0"
+pre-commit = "4.6.2"
 taplo = "0.10.0"
 
 [tasks."style:lint"]
