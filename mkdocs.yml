@@ -62,9 +62,6 @@ plugins:
   - blog
   - markdownextradata:
       data: docs/data/
-# - macros:
-#     file: docs/includes/macros.md
-
 nav:
   - Anasayfa: index.md
   - Topluluk: people.md
