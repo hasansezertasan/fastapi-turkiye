@@ -30,7 +30,9 @@ repo = "https://github.com/pre-commit/pre-commit-hooks"
 rev = "v6.0.0"
 hooks = [
   { id = "check-yaml" },
-  { id = "mixed-line-ending", args = ["--fix=lf"] },
+  # .gitignore carries the cobo block, which keeps the lone CR bytes of the macOS
+  # `Icon\r` patterns; normalizing them would break the block checksum.
+  { id = "mixed-line-ending", args = ["--fix=lf"], exclude = "^\\.gitignore$" },
 ]
 
 [[repos]]
