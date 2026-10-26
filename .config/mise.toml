@@ -1,6 +1,6 @@
 [tools]
 uv = "0.13.1"
-prek = "0.5.5"
+prek = "0.5.7"
 
 [tasks.lint]
 description = "Run all linters and formatters"
