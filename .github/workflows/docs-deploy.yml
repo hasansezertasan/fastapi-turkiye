@@ -25,7 +25,7 @@ jobs:
       # Description: Installs mise, a tool for building and deploying documentation, along
       # with the tools defined in the .config/mise.toml file.
       - name: Install mise
-        uses: jdx/mise-action@6612f0ef07ed2a736cd1e00a94a065522dd41195  # v5
+        uses: jdx/mise-action@b44d12e7d0d8ee7461bb893e1b1993500433185b  # v5
       # Step 3: Build and deploy the documentation
       # Description: Builds the documentation using mkdocs (run through uv) and pushes it to
       # the gh-pages branch. --locked fails the build if uv.lock is out of sync with
